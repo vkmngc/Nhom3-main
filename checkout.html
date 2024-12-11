@@ -2014,6 +2014,7 @@
 
                     function updateCartTotal() {
                         var totalValue = document.querySelector('.o-summary__table tr:nth-child(2) td:last-child');
+                        var totalValueEnd = document.querySelector('.o-summary__table tr:nth-child(3) td:last-child');
                         var shippingFee = document.querySelector('.o-summary__table tr:first-child td:last-child').textContent;
 
                         // Cập nhật giá trị tổng giỏ hàng
@@ -2021,10 +2022,9 @@
                         quantityControls.forEach(function(controls) {
                             var productPrice = controls.parentElement.querySelector('.o-card__price').textContent;
                             var productQuantity = parseInt(controls.querySelector('.o-card__quantity').textContent);
-
                             totalCartValue += (parseFloat(productPrice.replace(/\D/g, '')) * productQuantity);
                         });
-
+                        totalOrderValue = 0;
                         // Cập nhật giá trị tổng cộng
                         totalOrderValue = totalCartValue + parseFloat(shippingFee.replace(/\D/g, ''));
 
@@ -2034,8 +2034,9 @@
                         console.log('totalOrderValue:', totalOrderValue);
 
                         // Cập nhật giá trị tổng cộng vào HTML
-                        totalValue.textContent = formatCurrency(totalOrderValue);
-                    }
+                        totalValue.textContent = formatCurrency(totalCartValue);
+                        totalValueEnd.textContent = formatCurrency(totalOrderValue);
+                    }   
 
                     function formatCurrency(amount) {
                         return amount.toLocaleString('en-US', {
