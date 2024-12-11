@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <!-- kiểm soát cách trang web hiển thị trên các thiết bị di động.-->
+    <!--Thuộc tính name xác định tên của thẻ meta. Trong trường hợp này, viewport cho biết thẻ này kiểm soát cách trang web hiển thị trên các thiết bị di động.-->
+    <!--Thuộc tính content chứa các giá trị cho thẻ meta:
+            - width=device-width đặt chiều rộng của viewport bằng chiều rộng của thiết bị.
+            - initial-scale=1 đặt tỷ lệ ban đầu của trang web là 1, nghĩa là trang web sẽ không được phóng to hoặc thu nhỏ khi nó được tải lần đầu.
+            - shrink-to-fit=no ngăn trình duyệt tự động điều chỉnh kích thước nội dung để phù hợp với chiều rộng của thiết bị.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Thẻ này cung cấp mô tả về nội dung trang web, thường được sử dụng bởi công cụ tìm kiếm khi hiển thị kết quả tìm kiếm. Trong trường hợp này, không có mô tả nào được cung cấp.-->
+    <meta name="description" content="">
+
+    <!--Thẻ này xác định tác giả của trang web. Trong trường hợp này, không có tên tác giả nào được cung cấp.-->
+    <meta name="author" content="">
+
+
+    <!--Thẻ link trong HTML, được sử dụng để liên kết tới một tệp tin khác từ trang HTML hiện tại.-->
+    <!--Thuộc tính href xác định đường dẫn tới tệp tin cần liên kết, nó liên kết tới tệp tin favicon.png trong thư mục images-->
+    <!--Thuộc tính rel xác định mối quan hệ giữa trang HTML hiện tại và tệp tin được liên kết. Trong trường hợp này, giá trị shortcut icon cho biết tệp tin liên kết là một favicon, biểu tượng nhỏ xuất hiện trên tab trình duyệt bên cạnh tiêu đề trang.-->
+    <link href="images/CMC logo.png" rel="shortcut icon">
+    <!--Title của website được thể hiện trên nút tab của trình duyệt-->
+    <title>Chiêu Minh Các - 昭明閣</title>
+
+    <!--====== Font Montserrat ======-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!--====== Vendor Css: lấy định dạng css từ file này ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--====== Utility-Spacing: lấy định dạng css từ file này ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!--====== App: lấy định dạng css từ file này ======-->
+    <link rel="stylesheet" href="css/app.css">
+
+
+
+</head>
+<!-- áp dụng các quy tắc định dạng css của class "config" cho body-->
+
+<body class="config">
+    <!-- <div class ="...": áp dụng các quy tắc định dạng của một lớp nào đó cho thẻ div; Một thẻ có thể được định nghĩa bởi nhiều class css, các tên class được cách nhau bởi dấu cách như ví dụ ở phía dưới-->
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+            <!-- <img class ="...">: áp dụng các quy tắc định dạng của một lớp nào đó cho thẻ img-->
+            <!-- <img src ="...": chỉ định địa chỉ cho hình ảnh; alt="...": nếu không tìm được ảnh thì hiển thị với dòng chữ thay thế là ...-->
+            <img class="preloader__img" src="images/preloader.png" alt="">
+        </div>
+    </div>
+
+    <!--====== Main App ======-->
+    <!-- <div id="...": áp dụng các quy tắc định dạng của id cho thẻ div, id chỉ sử dụng cho một phần tử, class có thể dùng chỉ định định dạng cho nhiều phần tử-->
+    <div id="app">
+
+        <!--====== Main Header ======-->
+        <!-- <header class="...">: áp dụng định dạng của class ... cho thẻ header; header là thẻ định nghĩa header của trang-->
+        <header class="header--style-1">
+            <div class="top-banner">
+                <p id="banner-text">CHÀO MỪNG GIÁNG SINH - GIẢM GIÁ 20% TẤT CẢ CÁC SẢN PHẨM CỦA CHIÊU MINH CÁC - 昭明閣</p>
+            </div>
+            <!--====== Nav 1 (dòng header đầu tiên) ======-->
+            <!-- <nav class="...">: áp dụng định dạng của class ... cho thẻ nav; thẻ nav được sử dụng để định nghĩa thanh menu hoặc các liên kết điều hướng quan trọng trên một trang/website -->
+            <nav class="primary-nav primary-nav-wrapper">
+                <div class="container">
+
+                    <!--====== Primary Nav ======-->
+                    <div class="primary-nav">
+
+
+
+                        <!--====== Main Logo: đoạn code này dùng để thể hiện logo của của page trong phần header ======-->
+                        <!--thẻ <a> được dùng để xác định một liên kết; liên kết đó được chỉnh định trong thuộc tính href trong thẻ a-->
+                        <a class="main-logo" href="index.html">
+                            <!-- khi người dùng nhấp vào hình ảnh thì nó sẽ được chuyển hướng đến trang được chỉnh định trong thuộc tính href của thẻ a-->
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
+                        <!--====== End - Main Logo ======-->
+                        <!--====== Search Form: đoạn code này dùng để thể hiện nội dung của thanh tìm kiếm ======-->
+                        <!--Thẻ form dùng để tạo ra một biểu mẫu người dùng có thể nhập dữ liệu vào và gửi nó đến máy chủ-->
+                        <form class="main-form">
+
+                            <!--thẻ <label> được sử dụng để tạo một nhãn cho phần tử nhập liệu; Thuộc tính for="main-search" chỉ định rằng nhãn này liên kết với một phần tử có id="main-search"-->
+                            <label for="main-search"></label>
+
+                            <!--phần tử <input> được sử dụng để tạo một ô nhập liệu; type="": chọn kiểu dữ liệu được nhập vào;
+                                Thuộc tính id="main-search" liên kết phần tử này với nhãn có for="main-search";
+                                placehoder="": hiển thị một văn bản gợi ý trong ô nhập liệu khi không có dữ liệu. -->
+                            <input class="input-text input-text--border-radius input-text--only-white" type="text" id="main-search" placeholder="Tìm kiếm">
+
+                            <!--phần tử <button> được sử dụng để tạo một nút nhấn; type="submit" chỉ định rằng nút nhấn này sẽ gửi biểu mẫu khi được nhấp vào.-->
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+                        </form>
+                        <!--====== End - Search Form ======-->
+                        <!--====== Dropdown Main plugin: đoạn code này dùng để thể hiện nội dung của các nút tài khoản, liên hệ, gửi mail ======-->
+                        <div class="menu-init" id="navigation">
+                            <!--Lớp fas fa-cogs là một lớp của Font Awesome, một thư viện biểu tượng, và nó hiển thị một biểu tượng cogs (cơ cấu). Nút này có thể được sử dụng để mở / đóng menu. type="button" Đây là giá trị mặc định cho thẻ button. Nút này không có hành vi mặc định khi được nhấp vào.-->
+                            <button style="color: #7A0516;" class="btn btn--icon toggle-button toggle-button--white fas fa-cogs" type="button"></button>
+
+
+
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+
+
+                                <!--====== Thẻ ul được sử dụng để hiển thị một danh sách không sắp xếp ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-white">
+                                    <!-- đoạn code này dùng để hiển thị những nội dung liên quan đến icon tài khoản-->
+                                    <!-- Thẻ li được dùng để khai báo một mục của danh sách trong thẻ ul; -->
+                                    <!--data-tooltip: Thuộc tính được sử dụng để khởi tạo gợi ý. Trong trường hợp này, nó được đặt bằng “tooltip”, cho biết rằng một gợi ý nên được hiển thị khi di chuột qua phần tử này-->
+                                    <!--Thuộc tính data-placement xác định vị trí của gợi ý so với phần tử mà nó được gắn vào. Trong trường hợp này, nó được đặt bằng “left”, cho biết rằng gợi ý xuất hiện ở bên trái của phần tử-->
+                                    <!--Title: xác định nội dung của gợi ý, đó là Tài khoản-->
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản">
+                                        <a><i class="far fa-user-circle"></i></a>
+
+                                        <!--====== Dropdown: đoạn code này dùng để thể hiện nội dung thả xuống khi hover chuột vào nút tài khoản ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <!--style="width:120px": dùng để xác định chiều rộng của danh sách-->
+                                        <ul style="width:120px">
+                                            <li>
+
+                                                <a href="dashboard.html">
+                                                    <!--Thẻ i trong trường hợp này dùng để sử dụng cùng với các thư viện icon-->
+                                                    <i class="fas fa-user-circle u-s-m-r-6"></i>
+                                                    <span>Tài khoản</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signup.html">
+                                                    <i class="fas fa-user-plus u-s-m-r-6"></i>
+                                                    <span>Đăng ký</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signin.html">
+                                                    <i class="fas fa-lock u-s-m-r-6"></i>
+                                                    <span>Đăng nhập</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="signup.html">
+                                                    <i class="fas fa-lock-open u-s-m-r-6"></i>
+                                                    <span>Đăng xuất</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="admin.html">
+                                                    <i class="far fa-user-circle u-s-m-r-6"></i>
+                                                    <span>  Admin </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <!-- đoạn code này dùng để hiển thị những nội dung liên quan đến icon Liên hệ-->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Liên hệ">
+                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a>
+                                    </li>
+
+                                    <!-- đoạn code này dùng để hiển thị những nội dung liên quan đến icon email-->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Gửi mail">
+                                        <a href="#"><i class="far fa-envelope"></i></a>
+                                    </li>
+
+
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Primary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 1 (hết dòng menu đầu tiên) ======-->
+
+
+            <!--====== Nav 2 (dòng menu thứ hai) ======-->
+            <nav class="secondary-nav-wrapper">
+                <div class="container">
+
+                    <!--====== Secondary Nav ======-->
+                    <div class="secondary-nav">
+
+                        <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
+                        <!--======Tạo responsive design cho header-->
+                        <div class="menu-init" id="navigation1">
+                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
+
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+
+                                 <span class="ah-close">✕ Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list">
+                                    <li class="has-dropdown">
+
+                                        <span class="mega-text"><i class="fas fa-sort-down"></i></span>
+
+                                        <!--====== Mega Menu ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <div class="mega-menu">
+                                            <div class="mega-menu-wrap">
+                                                <div class="mega-menu-list">
+                                                    <ul>
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-tshirt u-s-m-r-6"></i></i>
+    
+                                                                    <span>Nhật Bình</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-tshirt u-s-m-r-6"></i>
+    
+                                                                    <span>Áo Tấc</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
+    
+                                                                    <span>Bộ giáp</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
+    
+                                                                    <span>Phụ kiện</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+                                                        <li>
+
+                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
+    
+                                                                    <span>Khác</span></a>
+
+                                                            <span class="js-menu-toggle"></span></li>
+                                                    </ul>
+                                                </div>
+
+                                                <!--====== Nam ======-->
+                                                <div class="mega-menu-content js-active">
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">NHẬT BÌNH</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Trắng</a>
+                                                                </li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Vàng</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Cam</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">ÁO TẤC</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Đỏ</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">GIAO LĨNH</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh lá</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh biển</a></li>
+
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+
+                                                        <div class="mega-banner">
+
+                                                            <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-0.jpg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                </div>
+                                                <!--====== End - Nam ======-->
+
+
+                                                <!--====== Nữ ======-->
+                                                <div class="mega-menu-content">
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-1.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-2.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">NHẬT BÌNH</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Trắng</a>
+                                                                </li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Vàng</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Cam</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">ÁO TẤC</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Đỏ</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">GIAO LĨNH</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh lá</a></li>
+                                                                <li>
+
+                                                                    <a href="shop-grid-left.html">Xanh biển</a></li>
+
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-9 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-3.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-4.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                </div>
+                                                <!--====== End - Nữ ======-->
+
+
+                                                <!--====== Nhật Bình ======-->
+                                                <div class="mega-menu-content">
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-4 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-5.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-6.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-7.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Đỏ</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Đỏ đậm</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Vàng</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Cam</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Hồng đậm</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Hồng tươi</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Tím nhạt</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Tím đậm</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Đen</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <ul>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Trắng</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Xanh dương đậm</a></li>
+                                                                <li class="mega-list-title">
+
+                                                                    <a href="shop-grid-left.html">Xanh dương nhạt</a></li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                    <br>
+
+
+
+                                                    <!--====== Mega Menu Row ======-->
+                                                    <div class="row">
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-8.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block" href="shop-grid-left.html">
+
+                                                                    <img class="u-img-fluid u-d-block" src="images/banners/banner-mega-9.jpg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--====== End - Mega Menu Row ======-->
+                                                </div>
+                                                <!--====== End - Nhật Bình ======-->
+
+
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+
+
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+
+
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+
+
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+                                                <!--====== No Sub Categories ======-->
+                                                <div class="mega-menu-content">
+                                                    <h5>No Categories</h5>
+                                                </div>
+                                                <!--====== End - No Sub Categories ======-->
+                                            </div>
+                                        </div>
+                                        <!--====== End - Mega Menu ======-->
+                                    </li>
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation2">
+
+                            <button style="color:#ffca3d;" class="btn btn--icon toggle-button toggle-button--white " type="button"><i class="fas fa-bars"></i></button>
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design2 ah-list--link-color-white">
+
+                                    <li>
+                                        <a href="index.html">TRANG CHỦ</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">VỀ CHÚNG TÔI</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="shop-grid-left.html">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:170px">
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="shop-grid-left.html">Nhật Bình</a>
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="shop-grid-left.html">Áo Tấc</a>
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="shop-grid-left.html">Bộ giáp</a>
+                                            </li>
+                                            <li class="has-dropdown has-dropdown--ul-left-100">
+                                                <a href="shop-grid-left.html">Phụ kiện</a>
+                                            </li>
+
+
+
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <li>
+                                        <a href="blog-right-sidebar.html">BLOG</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contact.html">LIÊN HỆ</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">HỖ TRỢ</a>
+                                    </li>
+
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+
+                        <!--====== Dropdown Main plugin: đoạn code này dùng để thể hiện các biểu tượng wishlist; giỏ hàng và những nội dung liên quan đến biểu tương ======-->
+                        <div class="menu-init" id="navigation3">
+                            <button style="color:#ffffff;" class="btn btn--icon toggle-button toggle-button--white fas fa-shopping-bag toggle-button-shop" type="button"></button>
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+                                <!--====== Menu ======-->
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-white">
+
+                                    <!--Biểu tượng wishlist-->
+                                    <li>
+                                        <a href="dash-my-wishlist.html"><i class="far fa-heart"></i></a>
+                                    </li>
+
+                                    <!--Biểu tưởng giỏ hàng-->
+                                    <li class="has-dropdown">
+                                        <a class="mini-cart-shop-link">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <span class="total-item-round">3</span>
+                                        </a>
+
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <div class="mini-cart">
+
+                                            <!--====== Mini Product Container ======-->
+                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
+
+                                                <!--====== Card for mini cart: Sản phẩm đầu tiên trong giỏ hàng ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+                                                            <a class="mini-product__link" href="product-detail.html">
+                                                                <img class="u-img-fluid" src="images/product/Nữ/1. Nhật Bình Vàng.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="mini-product__info-wrapper">
+                                                            <span class="mini-product__category">
+                                                                <a href="shop-grid-left.html ">Nhật Bình</a>
+                                                            </span>
+                                                            <span class="mini-product__name">
+                                                                <a href="product-detail.html">Nhật Bình Hoàng Hậu</a>
+                                                            </span>
+                                                            <span class="mini-product__quantity">1 x</span>
+                                                            <span class="mini-product__price">7.800.000đ</span>
+                                                        </div>
+                                                    </div>
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+                                                <!--====== Card for mini cart: Sản phẩm thứ hai trong giỏ hàng ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+
+                                                        <div class="mini-product__image-wrapper">
+                                                            <a class="mini-product__link" href="product-detail.html">
+                                                                <img class="u-img-fluid" src="images/product/Nữ/Ngũ thân tay chẽn trắng.jpg" alt="">
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+                                                                <a href="shop-grid-left.html">Áo tấc</a>
+                                                            </span>
+
+                                                            <span class="mini-product__name">
+                                                                <a href="product-detail.html">Áo tấc Nữ trắng</a>
+                                                            </span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">2.800.000đ</span>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+
+
+                                                <!--Xóa sản phẩm ra khỏi giỏ hàng-->
+                                                <script>
+                                                    // Đợi tất cả các phần tử HTML được tải xong
+                                                    document.addEventListener("DOMContentLoaded", function() {
+                                                        // Lấy tất cả các biểu tượng trash
+                                                        var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
+
+                                                        // Gán sự kiện click cho mỗi biểu tượng trash
+                                                        deleteButtons.forEach(function(button) {
+                                                            button.addEventListener('click', function() {
+                                                                // Lấy phần tử cha của biểu tượng trash (card-mini-product)
+                                                                var cardElement = button.closest('.card-mini-product');
+
+                                                                // Xóa phần tử cha (card-mini-product)
+                                                                cardElement.remove();
+                                                            });
+                                                        });
+                                                    });
+                                                </script>
+                                                <!--====== Kết thúc giỏ hàng mini  ======-->
+                                            </div>
+                                            <!--====== End - Mini Product Container ======-->
+
+                                            <!--====== Mini Product Statistics: Thống kê giỏ hàng mini ======-->
+                                            <div class="mini-product-stat">
+
+                                                <div class="mini-total">
+
+                                                    <span class="subtotal-text">TỔNG GIỎ HÀNG</span>
+                                                    <span class="subtotal-value">10.600.000đ</span>
+                                                </div>
+                                                <div class="mini-action">
+
+                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM GIỎ HÀNG</a>
+
+                                                </div>
+                                            </div>
+                                            <!--====== End - Mini Product Statistics ======-->
+                                        </div>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Secondary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 2 ======-->
+        </header>
+        <!--====== End - Main Header ======-->
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <!--Tạo khung chứa phần bộ lọc tìm kiếm-->
+
+            <div class="fix-ruler"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="shop-w-master">
+                            <!--Ký hiệu phễu lọc (fa-filter) của Font Awesome-->
+                            <h1 class="shop-w-master__heading u-s-m-b-30"><i class="fas fa-filter u-s-m-r-8"></i>
+                                <!--Tiêu đề bộ lọc tìm kiếm-->
+                                <span>BỘ LỌC TÌM KIẾM</span></h1>
+                            <div class="shop-w-master__sidebar">
+                                <div class="u-s-m-b-30">
+                                    <div class="ruler">
+                                        <div class="shop-w shop-w--style">
+                                            <div class="shop-w__intro-wrap">
+                                                <!--===== Bộ lọc theo Danh Mục =====-->
+                                                <h1 class="shop-w__h">DANH MỤC SẢN PHẨM</h1>
+                                                <!--Dấu trừ (fa-minus) lấy từ Font Awesome-->
+                                                <!--Khi Click vào dấu trừ, data-target sẽ bị ẩn đi (chức năng collapse)-->
+                                                <span class="fas fa-minus shop-w__toggle" data-target="#s-category" data-toggle="collapse"></span>
+                                            </div>
+                                            <div class="shop-w__wrap collapse show" id="s-category">
+                                                <ul class="shop-w__category-list gl-scroll">
+                                                    <li class="has-list">
+                                                        <!--Display:block => Tạo ra phần tử chiếm toàn bộ chiều ngang-->
+                                                        <ul style="display:block">
+                                                            <li class="has-list">
+                                                                <!--====== Danh mục Laptop Gaming =====-->
+                                                                <!--href="#" dùng để thể hiện liên kết đến vị trí trong trang hiện tại-->
+                                                                <!--====== Danh mục Nữ =====-->
+                                                                <!--href="#" dùng để thể hiện liên kết đến vị trí trong trang hiện tại-->
+                                                                <a href="#">Nhật Bình</a>
+                                                                <span class="category-list__text u-s-m-l-6"></span>
+                                                            </li>
+                                                            <li class="has-list">
+                                                                <a href="#">Áo tấc</a>
+                                                                <!--Dấu cộng (fa-plus) lấy từ Font Awesome, nhấn vào sẽ hiện ra data-target-->
+                                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                                <!--===== Các danh mục con ======-->
+                                                                <ul>
+                                                                    <li>
+
+                                                                        <a href="#">Nam</a></li>
+                                                                    <li>
+
+                                                                        <a href="#">Nữ</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="has-list">
+                                                                <a href="#">Bộ giáp</a>
+                                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                                <ul>
+                                                                    <li>
+
+                                                                        <a href="#">Nam</a></li>
+                                                                    <li>
+
+                                                                        <a href="#">Nữ</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="has-list">
+                                                                <a href="#">Phụ kiện</a>
+                                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                                <ul>
+                                                                    <li>
+
+                                                                        <a href="#">Nam</a></li>
+                                                                    <li>
+
+                                                                        <a href="#">Nữ</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="has-list">
+                                                                <a href="#">Khác</a>
+                                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                                <ul>
+                                                                    <li>
+
+                                                                        <a href="#">Giao lĩnh</a></li>
+                                                                    <li>
+
+                                                                        <a href="#">Viên lĩnh</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--===== Bộ Lọc theo Kích thước =====-->
+                                <div class="u-s-m-b-30">
+                                    <div class="shop-w shop-w--style">
+                                        <div class="shop-w__intro-wrap">
+                                            <h1 class="shop-w__h">KÍCH THƯỚC</h1>
+                                            <!--Dấu trừ (fa-minus) lấy từ Font Awesome-->
+                                            <!--Khi Click vào dấu trừ, data-target sẽ bị ẩn đi (chức năng collapse)-->
+                                            <span class="fas fa-minus shop-w__toggle" data-target="#s-shipping" data-toggle="collapse"></span>
+                                        </div>
+                                        <div class="shop-w__wrap collapse show" id="s-shipping">
+                                            <ul class="shop-w__list gl-scroll">
+                                                <li>
+
+                                                    <!--====== Check Box ======-->
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn Size hoặc không-->
+                                                        <input type="checkbox" id="size-S">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="size-S">S</label></div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn Size hoặc không-->
+                                                        <input type="checkbox" id="size-M">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="size-M">M</label></div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn Size hoặc không-->
+                                                        <input type="checkbox" id="size-L">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="size-L">L</label></div>
+                                                    </div>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn Size hoặc không-->
+                                                        <input type="checkbox" id="size-XL">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="size-XL">XL</label></div>
+                                                    </div>
+                                                    <!--====== End - Check Box ======-->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--===== Bộ lọc theo Màu Sắc =====-->
+                                <div class="u-s-m-b-30">
+                                    <div class="shop-w shop-w--style">
+                                        <div class="shop-w__intro-wrap">
+                                            <h1 class="shop-w__h">MÀU SẮC</h1>
+                                            <!--Dấu trừ (fa-minus) lấy từ Font Awesome-->
+                                            <!--Khi Click vào dấu trừ, data-target sẽ bị ẩn đi (chức năng collapse)-->
+                                            <span class="fas fa-minus shop-w__toggle" data-target="#s-color" data-toggle="collapse"></span>
+                                        </div>
+                                        <div class="shop-w__wrap collapse show" id="s-color">
+                                            <ul class="shop-w__list gl-scroll">
+                                                <li>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn màu hoặc không-->
+                                                        <input type="checkbox" id="mau-do">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="mau-do">Màu Đỏ</label></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn màu hoặc không-->
+                                                        <input type="checkbox" id="mau-vang">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="mau-vang">Màu Vàng</label></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn màu hoặc không-->
+                                                        <input type="checkbox" id="mau-cham">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="mau-cham">Màu Chàm</label></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn màu hoặc không-->
+                                                        <input type="checkbox" id="mau-trang">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="mau-trang">Màu Trắng</label></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="check-box">
+                                                        <!--Checkbox để chọn màu hoặc không-->
+                                                        <input type="checkbox" id="mau-hong">
+                                                        <div class="check-box__state check-box__state--primary">
+
+                                                            <label class="check-box__label" for="mau-hong">Màu Hồng</label></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--===== End - Bộ lọc màu sắc =====-->
+                                    </div>
+                                    <span> <br> </span>
+                                </div>
+                                <!--===== Bộ Lọc theo Giá =====-->
+                                <div class="u-s-m-b-30">
+                                    <div class="shop-w shop-w--style">
+                                        <div class="shop-w__intro-wrap">
+                                            <h1 class="shop-w__h">GIÁ</h1>
+                                            <span class="fas fa-minus shop-w__toggle" data-target="#s-price" data-toggle="collapse"></span>
+                                        </div>
+                                        <div class="shop-w__wrap collapse show" id="s-price">
+                                            <div class="range all-range-slider">
+                                                <div class="range-slider">
+                                                    <span class="range-selected"></span>
+                                                </div>
+                                                <div class="range-input">
+                                                    <input type="range" class="min" min="700000" max="20000000" value="700000" step="100000" />
+                                                    <input type="range" class="max" min="700000" max="20000000" value="20000000" step="100000" />
+                                                </div>
+                                                <div class="range-price">
+                                                    <span class="locacao-min-price"></span>
+                                                    <div>
+                                                        <pre class="dau_cach"> - </pre>
+                                                    </div>
+                                                    <span class="locacao-max-price"></span>
+                                                </div>
+                                                <div class="nut_loc">
+                                                    <button class="nutloc" type="submit">Lọc</button>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <script>
+                                            const rangeMin = 100000; //Khoảng giá kéo tối thiểu của thanh, 100 có nghĩa là min và max khi kéo cách nhau tối thiểu 100
+                                            document.addEventListener('DOMContentLoaded', function() { //Sự kiện khi trang được tải xong
+                                                const RangeElement = document.querySelector('.all-range-slider'); //Tìm phần tử có lớp .all-range-slider
+
+                                                ConfigurePriceRange(RangeElement); //Gọi hàm cấu hình cho thanh trượt giá
+                                            });
+
+                                            //Hàm cấu hình thanh trượt giá
+                                            //dùng để cập nhật giao diện thanh trượt giá dựa trên giá trị được người dùng chọn
+                                            function ConfigurePriceRange(element) {
+                                                //range: biểu diễn phần hiển thị giá trị đã chọn trong thanh trượt, sử dụng phương thức 'querySelector'để tìm kiếm trong các element phân tử đầu tiên có lớp CSS .range-selected nằm trong lớp .range-slider
+                                                const range = element.querySelector('.range-slider .range-selected');
+
+                                                // Sử dụng querySelectorAll để tìm tất cả các phần tử input trong phần tử có lớp .range-input
+                                                // Chỉ thanh trượt dùng để chọn giá trị tối thiểu và tối đa
+                                                const rangeInput = element.querySelectorAll('.range-input input');
+
+                                                //Tương tự như trên querySelectorAll dùng để tìm tất cả các phần tử <span> trong phần tử có lớp .range-price
+                                                //Hiển thị giá trị giá tối thiểu và tối đa
+                                                const rangePrice = element.querySelectorAll('.range-price span');
+                                                const minOffset = calculateOffset(rangeInput[0]); //giá trị dùng để thể hiện khoảng cách giữa giá trị tối thiểu và 0 (vị trí đầu thanh trượt)
+
+                                                //Cập nhật nội dung hiển thị cho các phần tử <span> giá trị tối thiểu và tối đa dựa trên giá trị Input
+                                                rangePrice[0].textContent = formatCurrency(parseInt(rangeInput[0].value)); //rangeInput[0]: truy cập phần tử đầu tiên trong danh sách các phần tử <span> được tìm thấy bởi querySelectorAll('.range-price span'), phần tử này hiển thị giá trị tối thiểu đã chọn từ thanh trượt
+                                                rangePrice[1].textContent = formatCurrency(parseInt(rangeInput[1].value)); // tương tự dòng này hiển thị phần tử tối đa trong thanh trượt
+
+                                                //Thêm sự kiện cho mỗi input -> khi người dùng di chuyển thanh trượt, input sẽ được kích hoạt và hàm UpdatePriceRange được gọi để cập nhật giao diện
+                                                rangeInput.forEach((input) => {
+                                                    input.addEventListener('input', () => {
+                                                        UpdatePriceRange(range, rangeInput, rangePrice, minOffset);
+                                                    });
+                                                });
+
+                                                //Thêm sự kiện cho mỗi phần tử <span>
+                                                //Khi giá trị trong <span> thay đổi, hàm UpdatePriceRange sẽ được gọi để cập nhật giao diện
+                                                rangePrice.forEach((span) => {
+                                                    span.addEventListener('input', (event) => {
+                                                        const minPrice = GetMinimumValue(element);
+                                                        const maxPrice = GetMaximumValue(element);
+                                                        //Kiểm tra xem khoảng cách giữa minPrice và maxPrice không được nhỏ hơn rangeMin
+                                                        if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
+                                                            if (event.target.classList.contains('min-price')) {
+                                                                rangeInput[0].value = minPrice;
+                                                                UpdatePriceRange(range, rangeInput, rangePrice, minOffset);
+                                                            } else {
+                                                                rangeInput[1].value = maxPrice;
+                                                                UpdatePriceRange(range, rangeInput, rangePrice, minOffset);
+                                                            }
+                                                        }
+                                                    });
+                                                });
+                                            }
+
+                                            function UpdatePriceRange(range, rangeInput, rangePrice, minOffset) {
+                                                const minRange = parseInt(rangeInput[0] ?.value || 0); // Lấy giá trị tối thiểu từ Input
+                                                const maxRange = parseInt(rangeInput[1] ?.value || 0); // Lấy giá trị tối đa từ input
+
+                                                // Kiểm tra khoảng cách giữa giá trị tối thiểu và tối đa
+                                                if (maxRange - minRange < rangeMin) {
+                                                    if (event.target ?.classList.contains('min')) {
+                                                        rangeInput[0].value = maxRange - rangeMin;
+                                                    } else {
+                                                        rangeInput[1].value = minRange + rangeMin;
+                                                    }
+                                                } else {
+                                                    // Cập nhật giá trị tối thiểu và tối đa
+                                                    rangePrice[0].textContent = formatCurrency(minRange);
+                                                    rangePrice[1].textContent = formatCurrency(maxRange);
+
+                                                    // Tính toán vị trí và kích thước của thanh trượt đã chọn
+                                                    const maximo = parseInt(rangeInput[1].getAttribute('max'));
+                                                    const minimo = parseInt(rangeInput[0].getAttribute('min'));
+
+                                                    //offsetLeft là một thuộc tính DOM chỉ khoảng cách từ phần tử đến cạnh trái của phần tử chứa nó (offset parent)
+                                                    //rangeInput[1].offsetLeft - rangeInput[0].offsetLeft tính toán khoảng cách giữa hai thanh trượt, giá trị tối thiểu và tối đa
+                                                    const totalRange = rangeInput[1].offsetLeft - rangeInput[0].offsetLeft;
+                                                    //Tính toán phần trăm khoảng cách từ vị trí bắt đầu của thanh trượt đến vị trí hiện tại của thanh trượt giá trị tối thiểu (minRange)
+                                                    const leftPercent = ((minRange - minimo) / (maximo - minimo)) * 100;
+                                                    //Tính toán phần trăm khoảng cách từ vị trí bắt đầu của thanh trượt đến vị trí hiện tại của thanh trượt giá trị tối đa (maxRange)
+                                                    const rightPercent = 100 - ((maxRange - minimo) / (maximo - minimo)) * 100;
+
+                                                    //Cập nhật thuộc tính style của phần tử range để phản ánh vị trí hiện tại của thanh trượt
+                                                    //leftPercent và rightPercent được sử dụng để xác định rõ vị trí bên trái và phải của thanh trượt giá trị đã chọn, tạo ra hiệu ứng "được chọn" trong giao diện người dùng
+                                                    range.style.left = `${leftPercent}%`;
+                                                    range.style.right = `${rightPercent}%`;
+                                                }
+                                            }
+
+                                            function formatCurrency(value) { //định dạng tiền tệ sang vnd
+                                                return value.toLocaleString('vn-VN', {
+                                                    style: 'currency',
+                                                    currency: 'VND'
+                                                });
+                                            }
+                                            // Lấy giá trị tối thiểu
+                                            function GetMinimumValue(element) {
+                                                return parseInt(element.querySelector('.min-price').textContent.replace(/\D/g, ''));
+                                            }
+                                            // Lấy giá trị tối đa
+                                            function GetMaximumValue(element) {
+                                                return parseInt(element.querySelector('.max-price').textContent.replace(/\D/g, ''));
+                                            }
+                                            //// Tính toán khoảng cách cho giá trị tối thiểu
+                                            function calculateOffset(minInput) {
+                                                const minOffset = parseInt(minInput.getAttribute('min')) || 0;
+                                                return Math.abs(minOffset);
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                                <!--===== Bộ Lọc theo Đánh Giá =====-->
+                                <div class="u-s-m-b-30">
+                                    <div class="shop-w shop-w--style">
+                                        <div class="shop-w__intro-wrap">
+                                            <h1 class="shop-w__h">ĐÁNH GIÁ</h1>
+                                            <!--Dấu trừ (fa-minus) lấy từ Font Awesome-->
+                                            <!--Khi Click vào dấu trừ, data-target sẽ bị ẩn đi (chức năng collapse)-->
+                                            <span class="fas fa-minus shop-w__toggle" data-target="#s-rating" data-toggle="collapse"></span>
+                                        </div>
+                                        <div class="shop-w__wrap collapse show" id="s-rating">
+                                            <ul class="shop-w__list gl-scroll">
+                                                <li>
+                                                    <!--==== Đánh giá 5 sao =====-->
+                                                    <div class="rating__check">
+                                                        <!--Checkbox để chọn đánh giá 5 sao hoặc không chọn-->
+                                                        <input type="checkbox">
+                                                        <!--Ký hiệu sao (fa-star) lấy từ Font Awesome-->
+                                                        <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                    </div>
+                                                    <!--Số lượt đánh giá 5 sao-->
+                                                    <span class="shop-w__total-text">(2)</span>
+                                                </li>
+                                                <li>
+                                                    <!--==== Đánh giá trên 4 sao =====-->
+                                                    <div class="rating__check">
+                                                        <!--Checkbox để chọn đánh giá 4 sao hoặc không chọn-->
+                                                        <input type="checkbox">
+                                                        <!--Ký hiệu sao (fa-star) lấy từ Font Awesome-->
+                                                        <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                                                    </div>
+                                                    <!--Số lượt đánh giá 4 sao-->
+                                                    <span class="shop-w__total-text">(8)</span>
+                                                </li>
+                                                <li>
+                                                    <!--==== Đánh giá trên 3 sao =====-->
+                                                    <div class="rating__check">
+                                                        <!--Checkbox để chọn đánh giá 3 sao hoặc không chọn-->
+                                                        <input type="checkbox">
+                                                        <!--Ký hiệu sao (fa-star) lấy từ Font Awesome-->
+                                                        <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+
+                                                    </div>
+                                                    <!--Số lượt đánh giá 3 sao-->
+                                                    <span class="shop-w__total-text">(10)</span>
+                                                </li>
+                                                <li>
+                                                    <!--==== Đánh giá trên 2 sao =====-->
+                                                    <div class="rating__check">
+                                                        <!--Checkbox để chọn đánh giá 2 sao hoặc không chọn-->
+                                                        <input type="checkbox">
+                                                        <!--Ký hiệu sao (fa-star) lấy từ Font Awesome-->
+                                                        <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+
+                                                    </div>
+                                                    <!--Số lượt đánh giá 2 sao-->
+                                                    <span class="shop-w__total-text">(12)</span>
+                                                </li>
+                                                <li>
+                                                    <!--==== Đánh giá trên 1 sao =====-->
+                                                    <div class="rating__check">
+                                                        <!--Checkbox để chọn đánh giá 1 sao hoặc không chọn-->
+                                                        <input type="checkbox">
+                                                        <!--Ký hiệu sao (fa-star) lấy từ Font Awesome-->
+                                                        <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+
+                                                    </div>
+                                                    <!--Số lượt đánh giá 1 sao-->
+                                                    <span class="shop-w__total-text">(1)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--===== Kết quả tìm kiếm =====-->
+                    <div class="col-lg-9 col-md-12">
+                        <div class="shop-p">
+                            <div class="shop-p__toolbar u-s-m-b-30">
+                                <div class="shop-p__meta-wrap u-s-m-b-60">
+
+                                    <span class="shop-p__meta-text-1">TÌM THẤY 18 KẾT QUẢ</span>
+                                    <div class="shop-p__meta-text-2">
+                                        <!--Hiển thị các tìm kiếm liên quan-->
+                                        <span>Tìm kiếm liên quan: </span>
+
+                                        <a class="gl-tag btn--e-brand-shadow" href="#">Nhật Bình</a>
+
+                                        <a class="gl-tag btn--e-brand-shadow" href="#">Ngũ thân tay chẽn</a>
+
+                                        <a class="gl-tag btn--e-brand-shadow" href="#">Áo Tấc</a></div>
+                                </div>
+                                <!--===== Chế độ trang ======-->
+                                <div class="shop-p__tool-style">
+                                    <div class="tool-style__group u-s-m-b-8">
+                                        <!--Lựa chọn chế độ trang theo lưới-->
+                                        <span class="js-shop-grid-target is-active">Lưới</span>
+                                        <!--Lựa chọn chế độ trang theo danh sách-->
+                                        <span class="js-shop-list-target">Danh Sách</span></div>
+                                    <form>
+                                        <div class="tool-style__form-wrap">
+                                            <!--Option tạo Dropdownlist để lựa chọn chế độ lưới của trang hiển thị bao nhiêu sản phẩm-->
+                                            <div class="u-s-m-b-8"><select class="select-box select-box--transparent-b-2">
+                                                                <option>Hiển thị: 8</option>
+                                                                <option selected>Hiển thị: 12</option>
+                                                                <option>Hiển thị: 16</option>
+                                                                <option>Hiển thị: 28</option>
+                                                            </select></div>
+                                            <!--Option tạo Dropdownlist để lựa chọn cách sắp xếp sản phẩm-->
+                                            <div class="u-s-m-b-8"><select class="select-box select-box--transparent-b-2">
+                                                                <option selected>Lọc theo: Sản phẩm mới nhất</option>
+                                                                <option>Lọc theo: Sản phẩm bán chạy</option>
+                                                                <option>Lọc theo: Đánh giá cao</option>
+                                                                <option>Lọc theo: Giá thấp</option>
+                                                                <option>Lọc theo: Giá cao</option>
+                                                            </select></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--===== Sản phẩm hiển thị sau khi lọc =====-->
+                            <div class="shop-p__collection">
+                                <!--phần chứa các sản phẩm của cửa hàng-->
+                                <div class="row is-grid-active">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <!--4 cột thành 1 cột với màn hình lớn và 6 cột thành 1 cột với màn hình nhỏ cà trung bình-->
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+                                                <!--định dạng phần ô vuông trên màn hình-->
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu1" src="images/product/Nữ/Giáp 1.jpg" alt="" onmouseover="overimg1()" onmouseout="outimg1()">
+                                                    <!-- hình ảnh sản phẩm -->
+                                                    <div class="sale-badge">Sale!</div>
+                                                </a>
+                                                <script>
+                                                    function overimg1() {
+                                                        document.getElementById("nu1").src = "images/product/Nữ/Giáp 2.jpg";
+                                                    }
+
+                                                    function outimg1() {
+                                                        document.getElementById("nu1").src = "images/product/Nữ/Giáp 1.jpg";
+                                                    }
+                                                </script>
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                    <!-- biểu tượng kính lúp để xem nhanh sản phẩm-->
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                    <!--thêm sản phẩm vào giở hàng-->
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <!--định dạng phần nội dung sản phẩm-->
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Bộ giáp</a>
+                                                    <!--danh mục-->
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Giáp gồm Tay + Chân + Bụng</a>
+                                                    <!-- tên sản phẩm -->
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <!--hiển thị đánh giá số sao đối với sản phẩm-->
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(5)</span>
+                                                    <!--số lượng người đánh giá-->
+                                                </div>
+                                                <div class="product-m__price">4.672.000₫
+
+                                                    <span class="product-m__discount">5.980.000₫</span>
+
+                                                </div>
+                                                <!--giá sản phẩm-->
+
+                                                <div class="product-m__hover">
+                                                    <!--hiệu ứng hover vào sản phẩm sẽ hiển thị thông tin chi tiết của sản phẩm-->
+                                                    <div class="product-m__preview-description">
+                                                        <span>
+                                                                        Bộ giáp tay, chân, và bụng thường được thiết kế mang phong cách truyền thống, lấy cảm hứng từ trang phục quân sự thời phong kiến.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+                                                        <!--biểu tượng yêu thích-->
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <!--tương tự như sản phẩm ở trên-->
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu2" src="images/product/Nữ/1. Nhật Bình Cam.jpg" alt="" onmousemove="overimg2()" onmouseout="outimg2()">
+                                                </a>
+                                                <script>
+                                                    function overimg2() {
+                                                        document.getElementById("nu2").src = "images/product/Nữ/Nhật Bình Cam 2.jpg";
+                                                    }
+
+                                                    function outimg2() {
+                                                        document.getElementById("nu2").src = "images/product/Nữ/1. Nhật Bình Cam.jpg";
+                                                    }
+                                                </script>
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Nhật Bình</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Nhật Bình Nữ Cam</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(23)</span>
+                                                </div>
+                                                <div class="product-m__price">4.200.000₫</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+                                                        <span>
+                                                                        Nhật Bình là một dạng thức áo đối khâm (hai vạt áo song song). Dưới triều Nguyễn nước ta có áo Nhật Bình.                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu3" src="images/product/Nữ/Ngũ thân tay chẽn trắng.jpg" alt="" onmousemove="overimg3()" onmouseout="outimg3()">
+                                                </a>
+                                                <script>
+                                                    function overimg3() {
+                                                        document.getElementById("nu3").src = "images/product/Nữ/Ngũ thân tay chẽn trắng 2.jpg";
+                                                    }
+
+                                                    function outimg3() {
+                                                        document.getElementById("nu3").src = "images/product/Nữ/Ngũ thân tay chẽn trắng.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Áo tấc</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Áo tấc Nữ Trắng</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                    <span class="product-m__review">(5)</span>
+                                                </div>
+                                                <div class="product-m__price">2.800.000₫</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Áo tay chẽn được thiết kế may hẹp khoảng 2cm bắt đầu từ khuỷu tay đến ống tay. Trong đó, phần thân trước dài trên mắt cá chân một chút, kết hợp ống tay được thiết kế gọn hơn áo tấc.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu4" src="images/product/Nữ/Ngũ thân tay thụng.jpg" alt="" onmousemove="overimg4()" onmouseout="outimg4()">
+                                                </a>
+                                                <script>
+                                                    function overimg4() {
+                                                        document.getElementById("nu4").src = "images/product/Nữ/Ngũ thân tay thụng 2.jpg";
+                                                    }
+
+                                                    function outimg4() {
+                                                        document.getElementById("nu4").src = "images/product/Nữ/Ngũ thân tay thụng.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Áo tấc</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Áo tấc Nữ Xanh Sáng</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                    <span class="product-m__review">(32)</span>
+                                                </div>
+                                                <div class="product-m__price">3.500.000₫</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Áo dài ngũ thân tay tấc là loại áo có thiết kế tay rộng, dài thụng. Áo dài ngũ thân tay tấc thường được kết hợp cùng với một chiếc quần dài, áo che từ trên cổ xuống qua đầu gối. Cả áo tấc nữ và áo tấc nam đều thiết kế cổ lập lĩnh, cúc cài bên phải và năm tà áo.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu5" src="images/product/Nam/Áo Tấc.jpg" alt="" onmousemove="overimg5()" onmouseout="outimg5()">
+                                                    <div class="sale-badge">Sale!</div>
+                                                </a>
+                                                <script>
+                                                    function overimg5() {
+                                                        document.getElementById("nu5").src = "images/product/Nam/Áo Tấc 2.jpg";
+                                                    }
+
+                                                    function outimg5() {
+                                                        document.getElementById("nu5").src = "images/product/Nam/Áo Tấc.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Áo tấc</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Áo tấc Nam Xanh Đậm</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+
+                                                    <span class="product-m__review">(0)</span>
+                                                </div>
+                                                <div class="product-m__price">2.700.000₫
+                                                    <span class="product-m__discount">3.300.000₫</span>
+
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Áo dài ngũ thân tay tấc là loại áo có thiết kế tay rộng, dài thụng. Áo dài ngũ thân tay tấc thường được kết hợp cùng với một chiếc quần dài, áo che từ trên cổ xuống qua đầu gối. Cả áo tấc nữ và áo tấc nam đều thiết kế cổ lập lĩnh, cúc cài bên phải và năm tà áo.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu6" src="images/product/Nữ/combo giao lĩnh với đối khâm tứ thân khoác ngoài.jpg" alt="" onmousemove="overimg6()" onmouseout="outimg6()">
+                                                </a>
+                                                <script>
+                                                    function overimg6() {
+                                                        document.getElementById("nu6").src = "images/product/Nữ/combo giao lĩnh với đối khâm tứ thân khoác ngoài 2.jpg";
+                                                    }
+
+                                                    function outimg6() {
+                                                        document.getElementById("nu6").src = "images/product/Nữ/combo giao lĩnh với đối khâm tứ thân khoác ngoài.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Khác</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Combo Nữ gồm Giao lĩnh + Đối khâm tứ thân khoác ngoài</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                    <span class="product-m__review">(36)</span>
+                                                </div>
+                                                <div class="product-m__price">6.300.000₫</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Bộ trang phục kết hợp giữa vẻ đẹp thanh lịch của Giao Lĩnh truyền thống và sự duyên dáng của Đối Khâm Tứ Thân khoác ngoài.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu7" src="images/product/Phụ kiện/Ngà bài.jpg" alt="" onmousemove="overimg7()" onmouseout="outimg7()">
+                                                </a>
+                                                <script>
+                                                    function overimg7() {
+                                                        document.getElementById("nu7").src = "images/product/Phụ kiện/Ngà bài 2.jpg";
+                                                    }
+
+                                                    function outimg7() {
+                                                        document.getElementById("nu7").src = "images/product/Phụ kiện/Ngà bài.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Phụ kiện</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Ngà bài</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                    <span class="product-m__review">(76)</span>
+                                                </div>
+                                                <div class="product-m__price">109.000₫</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Dùng cho cả Nam và Nữ <br>
+                                                                        Chất liệu: Resin <br>
+                                                                        Nội dung: Khắc theo yêu cầu
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu8" src="images/product/Nữ/Thầy bùa.jpg" alt="" onmousemove="overimg8()" onmouseout="outimg8()">
+                                                    <div class="sale-badge">Sale!</div>
+                                                </a>
+                                                <script>
+                                                    function overimg8() {
+                                                        document.getElementById("nu8").src = "images/product/Nữ/Thầy bùa 2.jpg";
+                                                    }
+
+                                                    function outimg8() {
+                                                        document.getElementById("nu8").src = "images/product/Nữ/Thầy bùa.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Khác</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Set Nhân vật thầy bùa</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(23)</span>
+                                                </div>
+                                                <div class="product-m__price">
+                                                    6.900.000₫
+
+                                                    <span class="product-m__discount">5.980.000₫</span>
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Đầu vấn khăn che mặt bằng dải voan đen. Ngũ thân lập lĩnh trắng lót trong và khoác ngoài với giao lĩnh đen cùng một lớp áo voan đen.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu9" src="images/product/Phụ kiện/Kim bài 1.jpg" alt="" onmousemove="overimg9()" onmouseout="outimg9()">
+                                                    <div class="sale-badge">Sale!</div>
+
+                                                </a>
+                                                <script>
+                                                    function overimg9() {
+                                                        document.getElementById("nu9").src = "images/product/Phụ kiện/Kim bài 2.jpg";
+                                                    }
+
+                                                    function outimg9() {
+                                                        document.getElementById("nu9").src = "images/product/Phụ kiện/Kim bài 1.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Phụ kiện</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Kim bài</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(50)</span>
+                                                </div>
+                                                <div class="product-m__price">
+                                                    250.000₫
+
+                                                    <span class="product-m__discount">300.000₫</span>
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Mang đậm dấu ấn quyền uy thời phong kiến, Kim Bài Ngự Điện Đại Thần là một sản phẩm tinh tế, tái hiện hình ảnh của những tín vật quyền lực trong hoàng cung. Sản phẩm được làm bằng nhựa.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu10" src="images/product/Phụ kiện/Kim Bội.jpg" alt="" onmousemove="overimg10()" onmouseout="outimg10()">
+                                                    <div class="sale-badge">Sale!</div>
+                                                </a>
+                                                <script>
+                                                    function overimg10() {
+                                                        document.getElementById("nu10").src = "images/product/Phụ kiện/Kim Bội 2.jpg";
+                                                    }
+
+                                                    function outimg10() {
+                                                        document.getElementById("nu10").src = "images/product/Phụ kiện/Kim Bội.jpg";
+                                                    }
+                                                </script>
+
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Phụ kiện</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Kim bội</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(123)</span>
+                                                </div>
+                                                <div class="product-m__price">
+                                                    250.000₫
+                                                    <span class="product-m__discount">300.000₫</span>
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Kim Bội là một dạng khen thưởng dành do nữ giới thời Nguyễn, thường có hai mặt. Một mặt khắc chữ : Quỳnh Dao Vĩnh Hảo- trong đó Quỳnh và Dao là hai loại ngọc, ám chỉ những điều tốt đẹp sẽ trường tồn. Mặt còn lại khắc chữ : Thành Thái Niên Tạo - đươc chế tác vào thời Thành Thái.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu11" src="images/product/Phụ kiện/Cúc Phượng.jpg" alt="" onmousemove="overimg11()" onmouseout="outimg11()">
+                                                </a>
+                                                <script>
+                                                    function overimg11() {
+                                                        document.getElementById("nu11").src = "images/product/Phụ kiện/Cúc Phượng 2.jpg";
+                                                    }
+
+                                                    function outimg11() {
+                                                        document.getElementById("nu11").src = "images/product/Phụ kiện/Cúc Phượng.jpg";
+                                                    }
+                                                </script>
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Phụ kiện</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Cúc hoa cài Nhật Bình</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                    <span class="product-m__review">(20)</span>
+                                                </div>
+                                                <div class="product-m__price">
+                                                    650.000₫
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Áo Nhật Bình thường sẽ được mặc kèm theo các phụ kiện. Thường thấy nhất chính là những chiếc cúc áo nạm vàng hoặc được làm từ ngọc, đá quý.
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                        <div class="product-m">
+                                            <div class="product-m__thumb">
+
+                                                <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+
+                                                    <img class="aspect__img" id="nu12" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="" onmousemove="overimg12()" onmouseout="outimg12()">
+                                                    <div class="sale-badge">Sale!</div>
+                                                </a>
+                                                <script>
+                                                    function overimg12() {
+                                                        document.getElementById("nu12").src = "images/product/Phụ kiện/Kim khánh 2.jpg";
+                                                    }
+
+                                                    function outimg12() {
+                                                        document.getElementById("nu12").src = "images/product/Phụ kiện/Kim khánh 1.jpg";
+                                                    }
+                                                </script>
+                                                <div class="product-m__quick-look">
+
+                                                    <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="product-m__add-cart">
+
+                                                    <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-m__content">
+                                                <div class="product-m__category">
+
+                                                    <a href="shop-grid-left.html">Phụ kiện</a>
+                                                </div>
+                                                <div class="product-m__name">
+
+                                                    <a href="product-detail.html">Kim Khánh</a>
+                                                </div>
+                                                <div class="product-m__rating gl-rating-style">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                    <span class="product-m__review">(56)</span>
+                                                </div>
+                                                <div class="product-m__price">
+                                                    250.000₫
+
+                                                    <span class="product-m__discount">300.000₫</span>
+                                                </div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                                        Dùng cho cả Nam và Nữ <br>
+                                                                        Chất liệu: Resin nguyên khối <br>
+                                                                        Nội dung: Kim Khánh đúc liền 2 mặt Nhất Hạng Kim Khánh/Thành Thái Sắc Tứ
+                                                                    </span>
+                                                    </div>
+                                                    <div class="product-m__wishlist">
+
+                                                        <a class="far fa-heart" href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-p-y-60">
+
+                                <!--====== Pagination ======-->
+                                <!--Thứ tự các trang sản phẩm-->
+                                <ul class="shop-p__pagination">
+                                    <!--is-actived thể hiện cho trang hiện tại đang được chọn-->
+                                    <li class="is-active">
+
+                                        <a href="shop-grid-left.html">1</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="shop-grid-left.html">2</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="shop-grid-left.html">3</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="shop-grid-left.html">4</a>
+                                    </li>
+                                    <li>
+
+                                        <a class="fas fa-angle-right" href="shop-grid-left.html"></a>
+                                        <!--liên kết áp dụng với icon để biểu thị còn những trang tiếp theo-->
+                                    </li>
+                                </ul>
+                                <!--====== End - Pagination ======-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--===== Banner bên phải ======-->
+                    <!-- <div class="col-lg-3 col-md-12">
+                                    <div>
+                                        <ul>
+                                            <li>hihi</li>
+                                            <li>hihi</li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section 1 ======-->
+
+    </div>
+
+
+    <!--====== End - App Content ======-->
+
+    <!--====== Main Footer ======-->
+    <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="outer-footer__content u-s-m-b-40">
+                            <!--Hiển thị các thông tin để khách hàng có thể liên hệ với Chiêu Minh Các - 昭明閣-->
+                            <span class="outer-footer__content-title">Liên hệ với chúng tôi</span>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="fas fa-home"></i>
+                                <span>279 Nguyễn Tri Phương, phường 5, quận 10, TP. Hồ Chí Minh</span>
+                            </div>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>(+0) 900 901 904</span>
+                            </div>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="far fa-envelope"></i>
+                                <span>chieuminhcac</span>
+                            </div>
+
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+                                        <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-youtube--color-hover" href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-6">
+
+                                <div class="outer-footer__content u-s-m-b-40">
+                                    <span class="outer-footer__content-title">Thông tin</span>
+
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+
+                                                <a href="cart.html">Giỏ hàng</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="dashboard.html">Tài khoản</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="#">Tài chính</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="shop-grid-left.html">Mua hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="outer-footer__content u-s-m-b-40">
+                                    <div class="outer-footer__list-wrap">
+
+                                        <span class="outer-footer__content-title">Chiêu Minh Các - 昭明閣</span>
+                                        <ul>
+                                            <li>
+
+                                                <a href="#">Giới thiệu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Liên hệ</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="dash-my-order.html">Giao hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.html">Cửa hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Khu vực form đăng ký -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+                            <span class="outer-footer__content-title">Đăng ký nhận thông tin mới</span>
+                            <form class="newsletter">
+                                <div class="u-s-m-b-15">
+                                    <div class="radio-box newsletter__radio">
+                                        <input type="radio" id="male" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+                                            <label class="radio-box__label" for="male">Nam</label>
+                                        </div>
+                                    </div>
+                                    <div class="radio-box newsletter__radio">
+                                        <input type="radio" id="female" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+                                            <label class="radio-box__label" for="female">Nữ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsletter__group">
+                                    <label for="newsletter"></label>
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập E-mail của bạn">
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button>
+                                </div>
+                                <span class="newsletter__text">Đăng ký vào danh sách gửi thư để nhận thông tin cập nhật về chương trình khuyến mãi, hàng mới, giảm giá và phiếu giảm giá.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="lower-footer__content">
+                            <div class="lower-footer__copyright">
+                                <span>Copyright © 2024</span>
+                                <a href="index.html" style="color: white">Chiêu Minh Các - 昭明閣</a>
+                                <span>Bảo lưu mọi bản quyền</span>
+                            </div>
+                            <div>
+                                <span>
+                                        <!--thêm hình ảnh chứng nhận-->
+                                        <img src="https://donghoduyanh.com/images/config/dathongbao.png" width="180px">
+                                        <span />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+<!--====== Modal Section ======-->
+            <!--====== Quick Look Modal ======-->
+            <div class="modal fade" id="quick-look">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal--shadow">
+
+                        <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+
+                                    <!--====== Product Breadcrumb ======-->
+                                    <div class="pd-breadcrumb u-s-m-b-30">
+                                        <ul class="pd-breadcrumb__list">
+                                            <li class="has-separator">
+
+                                                <a href="index.html">Trang chủ</a>
+                                            </li>
+                                            <li class="has-separator">
+
+                                                <a href="shop-grid-left.html">Phụ Kiện</a>
+                                            </li>
+
+                                            <li class="is-marked">
+
+                                                <a href="shop-grid-left.html">Kim Khánh</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--====== End - Product Breadcrumb ======-->
+                                    <!--====== Product Detail ======-->
+                                    <div class="pd u-s-m-b-30">
+                                        <div class="pd-wrap">
+                                            <div id="js-product-detail-modal">
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="u-s-m-t-15">
+                                            <div id="js-product-detail-modal-thumbnail">
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                                                </div>
+                                                <div>
+
+                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Product Detail ======-->
+                                </div>
+                                <div class="col-lg-7">
+
+                                    <!--====== Product Right Side Details ======-->
+                                    <div class="pd-detail">
+                                        <div>
+
+                                            <span class="pd-detail__name">Kim Khánh</span>
+                            </div>
+                            <div>
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__price">250.000đ</span>
+
+                                    <span class="pd-detail__discount">(-17%)</span><del class="pd-detail__del">300.000đ</del>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                    <span class="pd-detail__review u-s-m-l-4">
+
+                                                    <a href="product-detail.html">35 Đánh giá</a>
+                                                </span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__stock">200 đã được bán</span>
+
+                                    <span class="pd-detail__left">Chỉ còn lại 2</span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+
+                                <span class="pd-detail__preview-desc">Kim Khánh Nhất Hạng / Thành Thái Sắc Tứ. Chất liệu đồng vàng nguyên khối đúc liền 2 mặt.</span>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__click-wrap">
+                                                    <i class="far fa-heart u-s-m-r-6"></i>
+
+                                                    <a href="dash-my-wishlist.html">Thêm vào yêu thích</a>
+
+                                                    <span class="pd-detail__click-count">(222)</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__click-wrap">
+                                                    <i class="far fa-envelope u-s-m-r-6"></i>
+
+                                                    <a href="signin.html">Gửi email cho tôi khi giá giảm</a>
+
+                                                    <span class="pd-detail__click-count">(20)</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <ul class="pd-social-list">
+                                    <li>
+
+                                        <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+
+                                        <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+
+                                        <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+
+                                        <a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                    <li>
+
+                                        <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <form class="pd-detail__form">
+                                    <div class="pd-detail-inline-2">
+                                        <div class="u-s-m-b-15">
+
+                                            <!--====== Input Counter ======-->
+                                            <div class="input-counter">
+
+                                                <span class="input-counter__minus fas fa-minus"></span>
+
+                                                <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                <span class="input-counter__plus fas fa-plus"></span>
+                                            </div>
+                                            <!--====== End - Input Counter ======-->
+                                        </div>
+                                        <div class="u-s-m-b-15">
+
+                                            <button class="btn btn--e-brand-b-2" type="submit">Thêm vào giỏ hàng</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="u-s-m-b-15">
+
+                                <span class="pd-detail__label u-s-m-b-8">Chính sách sản phẩm:</span>
+                                <ul class="pd-detail__policy-list">
+                                    <li>
+                                        <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                        <span>Bảo vệ người mua.</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                        <span>Hoàn trả đầy đủ nếu bạn không nhận được đơn đặt hàng của mình.</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                        <span>Chấp nhận đổi trả nếu sản phẩm không đúng mô tả.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--====== End - Product Right Side Details ======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--====== End - Quick Look Modal ======-->
+        <!--====== Add to Cart Modal ======-->
+        <div class="modal fade" id="add-to-cart">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-radius modal-shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="success u-s-m-b-30">
+                                    <div class="success__text-wrap">
+                                        <i class="fas fa-check"></i>
+
+                                        <span>Sản phẩm  đã được thêm vào giỏ hàng thành công!</span>
+                                    </div>
+                                    <div class="success__img-wrap">
+
+                                        <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                    </div>
+                                    <div class="success__info-wrap">
+
+                                        <span class="success__name">
+                                        Kim Khánh
+                                    </span>
+
+                                        <span class="success__quantity">Số lượng: 1</span>
+
+                                        <span class="success__price">250.000đ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="s-option">
+
+                                    <span class="s-option__text">1 sản phẩm trong giỏ hàng của bạn</span>
+                                    <div class="s-option__link-box">
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP TỤC MUA SẮM</a>
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">XEM GIỎ HÀNG</a>
+
+                                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">TIẾN HÀNH THANH TOÁN </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Add to Cart Modal ======-->
+        <!--====== End - Modal Section ======-->
+        </div>
+        <!--====== End - Main App ======-->
+        <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+        <script>
+            // Tạo đối tượng Google Analytics
+            window.ga = function() {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            // Khởi tạo Google Analytics với ID trang web
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            // Gửi thông tin trang cho Google Analytics
+            ga('send', 'pageview')
+        </script>
+        <!-- Nạp script của Google Analytics từ địa chỉ cung cấp -->
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <!--====== Vendor Js ======-->
+        <!-- Nạp các tập tin JavaScript của bên thứ ba (Vendor Js) -->
+        <script src="js/vendor.js"></script>
+
+        <!--====== jQuery Shopnav plugin ======-->
+        <!-- Nạp plugin jQuery Shopnav -->
+        <script src="js/jquery.shopnav.js"></script>
+
+        <!--====== App ======-->
+        <!-- Nạp script của ứng dụng chính (App) -->
+        <script src="js/app.js"></script>
+
+        <!--====== Noscript ======-->
+        <!-- Hiển thị thông báo khi JavaScript bị tắt -->
+        <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript đã tắt trong trình duyệt.</h1>
+
+                            <span class="app-setting__text">Vui lòng kích hoạt JavaScript trong trình duyệt hoặc nâng cấp lên một trình duyệt hỗ trợ JavaScript.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+
+</html>

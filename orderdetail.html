@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="images/CMC logo.png" rel="shortcut icon">
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Đơn hàng chi tiết</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <style>
+        *{
+            font-family: 'Montserrat';
+        }
+    </style>
+</head>
+
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <!--Hiển thị logo của trang web theo định dạng trong class header-mobile-inner,
+                    logo được lấy từ ảnh theo đường link images/icon/logo1.png với từ thay thế
+                    là Chiêu Minh Các Concept và khi người dùng click vào ảnh sẽ chuyển hướng đến trang chủ
+                    của website cửa hàng-->
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
+                        </a>
+                        <!--Đây là nút để hiển thị một menu điều hướng khi người dùng click chuột vào-->
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Menu được mở ra khi click vào nút 3 gạch trong giao diện desktop-->
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <!--Chỉ định class cho phần menu điều hướng trên thiết bị di động, bao gồm class về định dạng
+                    và loại bỏ các gạch đầu dòng mặc định của danh sách (list-unstyled)-->
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="admin.html">
+                                <!--Hiển thị icon fa-home từ thư viện fas và một
+                            mục Bảng điều khiển trong menu, tương tự với các mục phía dưới,
+                            tùy theo tên danh mục sẽ lựa chọnicon phù hợp-->
+                                <i class="fas fa-home"></i>Bảng điều khiển
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product.html">
+                                <i class="fas fa-cubes"></i>Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catagory.html">
+                                <i class="fas fa-tags"></i>Danh mục
+                            </a>
+                        </li>
+                        <li>
+                            <a href="saleprog.html">
+                                <i class="fas fa-percent"></i>Khuyến mãi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Order.html">
+                                <i class="fas fa-shopping-cart"></i>Đơn hàng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+        <!-- MENU SIDEBAR-->
+        <!--Logo và thanh menu bên phải đối với màn hình desktop, nội dung của menu tương tự
+            như của mobile nhưng thay đổi class để menu được hiển thị một cách phù hợp-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <!--Hiển thị logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
+                </a>
+            </div>
+            <!--Hiển thị menu-->
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="admin.html">
+                                <i class="fas fa-home"></i>Bảng điều khiển
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product.html">
+                                <i class="fas fa-cubes"></i>Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catagory.html">
+                                <i class="fas fa-tags"></i>Danh mục
+                            </a>
+                        </li>
+                        <li>
+                            <a href="saleprog.html">
+                                <i class="fas fa-percent"></i>Khuyến mãi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Order.html">
+                                <i class="fas fa-shopping-cart"></i>Đơn hàng
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+        <!-- PAGE CONTAINER-->
+
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <div class="header-button">
+                                <div class="noti-wrap"></div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <!--Hiển thị ảnh avatar admin trên thanh header-->
+                                        <div class="image">
+                                            <img src="https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/03/12/c/e/0/9/1520848320748_600.jpg" alt="Chiêu Minh Các" />
+                                        </div>
+                                        <!--Hiển thị tên admin trên thanh header-->
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Mỹ Phường</a>
+                                        </div>
+                                        <!--Dropdown xuất hiện khi nhấn vào ảnh hoặc tên admin, những nội dung trong
+                                            thẻ này chỉ xuất hiện khi nhấn vào tài khoản admin trên thanh header-->
+                                        <div class="account-dropdown js-dropdown">
+                                            <!--Định dạng cách hiển thị ảnh avatar và tên admin và email theo class được chỉnh định-->
+                                            <div class="info clearfix">
+                                                <!--Hiển thị ảnh avatar admin-->
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/03/12/c/e/0/9/1520848320748_600.jpg" alt="Mỹ Phường" />
+                                                    </a>
+                                                </div>
+                                                <!--Tên và email của tài khoản admin-->
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">Mỹ Phường</a>
+                                                    </h5>
+                                                    <span class="email">myphuong@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <!-- Những tính năng có để quản lý tài khoản admin bao gồm tài khoản, cài đặt, 
+                                                thanh toán và Đăng xuất-->
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Tài khoản
+                                                    </a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-settings"></i>Cài đặt
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-power"></i>Đăng xuất
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="title-5 m-b-35">Chi tiết sản phẩm đơn hàng</h3>
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>Ảnh</th>
+                                                <th>Tên sản phẩm</th>
+                                                <th>Mã sản phẩm</th>
+                                                <th>Giá</th>
+                                                <th>Số lượng</th>
+                                                <th style="text-align: right;">Tổng tiền</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr-shadow">
+                                                <td><img src="images/product/Nữ/1. Nhật Bình Vàng.jpg" alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>Nhật Bình Hoàng Hậu</td>
+                                                <td>WR123456</td>
+                                                <td>4.520.000</td>
+                                                <td>1</td>
+                                                <td style="text-align: right;">4.520.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td><img src="images/product/Phụ kiện/Cúc Phượng.jpg" alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>Cúc hoa cài Nhật Bình</td>
+                                                <td>WR123457</td>
+                                                <td>690.000</td>
+                                                <td>2</td>
+                                                <td style="text-align: right;">1.380.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <td><img src="images/product/Phụ kiện/Kim Bội.jpg" alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>Kim Bội</td>
+                                                <td>WR123459</td>
+                                                <td>250.000</td>
+                                                <td>1</td>
+                                                <td style="text-align: right;">250.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+                                                <!-- <td></td>
+                                                <td></td>
+                                                <td></td>  
+                                                <td></td>
+                                                <td></td> -->
+                                                <td colspan="6" style="text-align: right;">
+                                                    <div>Tổng tiền hàng: 6.150.000</div>
+                                                    <div>Tiền vận chuyển: 30.000</div>
+                                                    <div>Tiền voucher giảm giá: -200.000</div>
+                                                    <div>Giảm giá phí vận chuyển: -30.000</div>
+                                                    <div style="color: red;">Tổng thanh toán: 5.920.000</div>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- TOP CAMPAIGN-->
+                            <div class="top-campaign">
+                                <h3 class="title-3 m-b-30">Thông tin đơn hàng</h3>
+                                <div class="table-responsive">
+                                    <table class="table table-top-campaign">
+                                        <tbody>
+                                            <tr>
+                                                <td> Khách hàng</td>
+                                                <td style="text-align: right">
+                                                    <div>
+                                                        <img src="https://avatar-ex-swe.nixcdn.com/song/2021/02/05/0/8/e/4/1612515892709_640.jpg" alt="Customer Image" style="width: 50px; height: 50px; border-radius: 50%;">
+                                                        <div>
+                                                            <div>Trần Thị Mỹ Phường</div>
+                                                            <div>ID: #123456</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Thông tin liên hệ</td>
+                                                <td>
+                                                    <div>Email: mp229@gmail.com</div>
+                                                    <div>Số điện thoại: 0677777777</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Địa chỉ giao hàng</td>
+                                                <td>Lý Thường Kiệt, KP5, Dương Đông, Phú Quốc</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thời gian đặt hàng</td>
+                                                <td>07/12/2024 23:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lưu ý với đơn hàng</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thông tin vận chuyển</td>
+                                                <td>
+                                                    <div>Đơn vị: Giao hàng nhanh</div>
+                                                    <div>Mã vận đơn: GHN1234566789 </div>
+                                                    <div>Đơn hàng đã được giao thành công vào 10/12/2024 10:11</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thông tin thanh toán</td>
+                                                <td>Thanh toán khi nhận hàng</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tình trạng đơn hàng</td>
+                                                <td>Hoàn tất</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--  END TOP CAMPAIGN-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
