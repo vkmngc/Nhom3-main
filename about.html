@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Thẻ này cung cấp mô tả về nội dung trang web, thường được sử dụng bởi công cụ tìm kiếm khi hiển thị kết quả tìm kiếm. Trong trường hợp này, không có mô tả nào được cung cấp.-->
-    <meta name="description" content="">
+    <meta name="description" content="Chiêu Minh Các">
 
     <!--Thẻ này xác định tác giả của trang web. Trong trường hợp này, không có tên tác giả nào được cung cấp.-->
-    <meta name="author" content="">
+    <meta name="author" content="Nhóm 3">
 
 
     <!--Thẻ link trong HTML, được sử dụng để liên kết tới một tệp tin khác từ trang HTML hiện tại.-->
@@ -38,6 +38,8 @@
     <!--====== App: lấy định dạng css từ file này ======-->
     <link rel="stylesheet" href="css/app.css">
 
+    <!--====== Thư viện javascript scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 
 </head>
@@ -197,7 +199,7 @@
                         <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
                         <!--======Tạo responsive design cho header-->
                         <div class="menu-init" id="navigation1">
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
+                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button"><i class="fas fa-sort-down"></i></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -742,6 +744,7 @@
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
 
+
                                                 <!--Xóa sản phẩm ra khỏi giỏ hàng-->
                                                 <script>
                                                     document.addEventListener("DOMContentLoaded", function() {
@@ -834,26 +837,15 @@
         <div class="app-content">
 
             <!--====== Section 1 ======-->
-            <div class="u-s-p-y-60">
-
                 <!--====== Section Content ======-->
-                <div class="section__content">
-                    <div class="container">
-                        <div class="breadcrumb">
-                            <div class="breadcrumb__wrap">
-                                <ul class="breadcrumb__list">
-                                    <li class="has-separator">
-
-                                        <a href="index.html">Trang chủ</a></li>
-                                    <li class="is-marked">
-
-                                        <a href="about.html">Về chúng tôi</a></li>
-                                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact-area u-h-100" style="margin-bottom: 20px;">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <!--====== End - Section 1 ======-->
 
 
@@ -1414,8 +1406,20 @@
                 </div>
             </div>
         </footer>
+        <!--End Footer-->
+        <!--====== Script chỉnh hiệu ứng bay từng section =====-->
+        <script>
+            ScrollReveal({
+                reset:true,
+                distance: '60px',
+                duration:2500,
+                delay:400
+            });
 
-
+            ScrollReveal().reveal('.section__text-wrap', { delay: 200, origin: 'left' });
+            ScrollReveal().reveal('.section__content', { delay: 500, origin: 'bottom' });
+        </script>
+        <!--====== End Script chỉnh hiệu ứng====-->
         <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
         <script>
             window.ga = function() {

@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Thẻ này cung cấp mô tả về nội dung trang web, thường được sử dụng bởi công cụ tìm kiếm khi hiển thị kết quả tìm kiếm. Trong trường hợp này, không có mô tả nào được cung cấp.-->
-    <meta name="description" content="">
+    <meta name="description" content="Chiêu Minh Các">
 
     <!--Thẻ này xác định tác giả của trang web. Trong trường hợp này, không có tên tác giả nào được cung cấp.-->
-    <meta name="author" content="">
+    <meta name="author" content="Nhóm 3">
 
 
     <!--Thẻ link trong HTML, được sử dụng để liên kết tới một tệp tin khác từ trang HTML hiện tại.-->
@@ -37,8 +37,6 @@
 
     <!--====== App: lấy định dạng css từ file này ======-->
     <link rel="stylesheet" href="css/app.css">
-
-
 </head>
 <!-- áp dụng các quy tắc định dạng css của class "config" cho body-->
 
@@ -196,7 +194,7 @@
                         <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
                         <!--======Tạo responsive design cho header-->
                         <div class="menu-init" id="navigation1">
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
+                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button"><i class="fas fa-sort-down"></i></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -685,6 +683,7 @@
         <!--====== End - Main Header ======-->
         <!--====== App Content ======-->
         <div class="app-content">
+
             <!--====== Section 1 ======-->
             <div class="u-s-p-y-60">
 
@@ -967,8 +966,10 @@
                                                 <table class="f-cart__table">
                                                     <tbody>
                                                         <tr>
-                                                            <td>VẬN CHUYỂN</td>
+                                                            <td>VẬN CHUYỂN </td>
                                                             <td class="shipping-fee">30.000đ</td>
+                                                        </tr>
+                                                        <tr>
                                                         </tr>
                                                         <tr>
                                                             <td>TỔNG TIỀN HÀNG</td>
@@ -982,8 +983,9 @@
                                                 </table>
                                             </div>
                                             <div>
-                                                <a class="btn btn--e-brand-b-2" href="checkout.html" style="margin-left: 50px; margin-right: 20px;">TIẾN HÀNH THANH TOÁN</a>
+                                                <a class="btn btn--e-brand-b-2" href="checkout.html" style="margin-left: 90px;margin-right: 50px;"> THANH TOÁN</a>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1016,6 +1018,7 @@
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
                                                         <img class="aspect__img" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
+                                                        <div class="sale-badge">Sale!</div>
                                                     </a>
                                                     <div class="product-o__action-wrap">
                                                         <ul class="product-o__action-list">
@@ -1035,7 +1038,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-
+                                                <!--Đoạn mô tả thông tin sản phẩm kèm theo-->
                                                 <span class="product-o__category">
 
                                                     <a href="shop-grid-left.html">Phụ kiện</a>
@@ -1050,11 +1053,11 @@
 
                                                     <span class="product-o__review">(20)</span>
                                                 </div>
-
-                                                <span class="product-o__price">
+                                                <!--Chứa thông tin về giá sản phẩm-->
+                                                <span class="product-o__price"> <!--Giá sau khi giảm-->
                                                     250.000 ₫
 
-                                                    <span class="product-o__discount">300.000 ₫</span>
+                                                    <span class="product-o__discount">300.000 ₫</span> <!--Giá gốc-->
                                                 </span>
                                             </div>
                                         </div>
@@ -1065,20 +1068,25 @@
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
                                                         <img class="aspect__img" src="images/product/Phụ kiện/Kim bài 1.jpg" alt="">
+                                                        <!--Chèn hình ảnh cho sản phẩm kèm theo-->
+                                                        <div class="sale-badge">Sale!</div> <!--Chèn cục Sales trên ảnh đánh dấu sản phẩm sale-->
                                                     </a>
-                                                    <div class="product-o__action-wrap">
-                                                        <ul class="product-o__action-list">
+                                                    <div class="product-o__action-wrap"> <!--Chứa các hoạt động liên quan đến sản phẩm-->
+                                                        <ul class="product-o__action-list"> <!--Danh sách các hành động-->
                                                             <li>
 
                                                                 <a data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                                <!--Khi nhấn vào, hành động sẽ mở một cửa sổ xem nhanh với ID là "quicklook"-->
                                                             </li>
                                                             <li>
 
                                                                 <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ hàng"><i class="fas fa-shopping-bag"></i></a>
+                                                                <!--Khi nhấn vào, hành động sẽ mở một cửa sổ bỏ giỏ hàng với ID là "add-to-cart"-->
                                                             </li>
                                                             <li>
 
                                                                 <a href="dash-my-wishlist.html" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                                <!--Khi nhấn vào, hành động sẽ thêm vào yêu thích có tham chiếu đến trang "dash-my-wishlist.html"-->
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1100,7 +1108,7 @@
                                                 </div>
 
                                                 <span class="product-o__price">
-                                                    250.000₫
+                                                    240.000₫
 
                                                     <span class="product-o__discount">300.000₫</span>
                                                 </span>
@@ -1113,6 +1121,7 @@
                                                     <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
                                                         <img class="aspect__img" src="images/product/Phụ kiện/Ngà bài 2.jpg" alt="">
+                                                        <div class="sale-badge">Sale!</div>
                                                     </a>
                                                     <div class="product-o__action-wrap">
                                                         <ul class="product-o__action-list">
@@ -1148,9 +1157,9 @@
                                                 </div>
 
                                                 <span class="product-o__price">
-                                                    109.000₫
+                                                    250.000₫
 
-                                                    <span class="product-o__discount">120.000₫</span>
+                                                    <span class="product-o__discount">300.000₫</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -1197,8 +1206,6 @@
 
                                                 <span class="product-o__price">
                                                     650.000₫
-
-                                                    <span class="product-o__discount">700.000đ</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -1253,19 +1260,19 @@
                                     <div id="js-product-detail-modal">
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                         </div>
 
                                     </div>
@@ -1274,19 +1281,19 @@
                                     <div id="js-product-detail-modal-thumbnail">
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                         </div>
                                         <div>
 
-                                            <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                         </div>
 
                                     </div>
@@ -1450,7 +1457,7 @@
                                 </div>
                                 <div class="success__img-wrap">
 
-                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                 </div>
                                 <div class="success__info-wrap">
 
@@ -1484,7 +1491,57 @@
         </div>
     </div>
     <!--====== End - Add to Cart Modal ======-->
-    <!--====== End - Newsletter Subscribe Modal ======-->
+            <!--====== Newsletter Subscribe Modal: Đoạn mã HTML này tạo ra một cửa sổ modal, thường được sử dụng để hiển thị nội dung không gian động trên trang web hiện tại mà không cần chuyển hướng hoặc tải lại trang.
+                        Trong trường hợp này, cửa sổ modal được sử dụng để hiển thị một biểu mẫu đăng ký nhận thông báo mới.    ======-->
+                        <div class="modal fade new-l" id="newsletter-modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content modal--shadow">
+            
+                                    <!--Lớp fas fa-times là một lớp của Font Awesome, một thư viện biểu tượng, và nó hiển thị một biểu tượng “x”. Thuộc tính data-dismiss="modal" được sử dụng để chỉ định rằng khi nút này được nhấp,
+                                                cửa sổ modal sẽ được đóng.-->
+                                    <button class="btn new-l__dismiss fas fa-times" type="button" data-dismiss="modal"></button>
+                                    <div class="modal-body">
+                                        <div class="row u-s-m-x-0">
+                                            <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
+            
+                                                <a class="new-l__img-wrap u-d-block" href="shop-grid-left.html">
+            
+                                                    <img class="u-img-fluid u-d-block" src="images/newsletter/newsletter.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 new-l__col-2">
+                                                <div class="new-l__section u-s-m-t-30">
+                                                    <div class="u-s-m-b-8 new-l--center">
+                                                        <h3 class="new-l__h3">Nhận thông báo mới</h3>
+                                                    </div>
+                                                    <div class="u-s-m-b-30 new-l--center">
+                                                        <p class="new-l__p1"> Đăng ký email để nhận thông tin về hàng mới, chương trình giảm giá đặc biệt</p>
+                                                    </div>
+                                                    <form class="new-l__form">
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <input class="news-l__input" type="text" placeholder="Địa chỉ email của bạn">
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <button class="btn btn--e-brand-b-2" type="submit">Đăng ký!</button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="u-s-m-b-15 new-l--center">
+                                                        <p class="new-l__p2">Bằng cách đăng ký, bạn đồng ý nhận các ưu đãi của Chiêu Minh Các Concept, chương trình khuyến mãi và các thông tin mới nhất. Bạn có thể bỏ đăng kí bất cứ lúc nào.</p>
+                                                    </div>
+                                                    <div class="u-s-m-b-15 new-l--center">
+            
+                                                        <a class="new-l__link" data-dismiss="modal">Không, cảm ơn</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====== End - Newsletter Subscribe Modal ======-->
     <!--====== End - Modal Section ======-->
     </div>
     <!--====== Footer chính ======-->
@@ -1740,6 +1797,7 @@
     updateTotals();
     });
     </script>
+    <!--====== KẾT THÚC JS CHO PHẦN TÍNH TIỀN CỦA TỔNG ĐƠN HÀNG ======-->
     <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
     <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
     <script>

@@ -1,29 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--Nhóm xin phép được comment vào các câu lệnh và đoạn code được xuất hiện lần đầu trong page ạ;
+    Những đoạn code tiếp theo có cấu trúc và các lệnh tương tự nhóm xin phép không comment lại ạ, nhóm cảm ơn thầy ạ!
+    Riêng thẻ phần khai báo đầu của các file html và các đoạn code khai báo cho footer, header nhóm xin phép chỉ để
+    comment trong file index (trang chủ) vì các nội dung này giống nhau ở tất cả các file-->
 
-<head>
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <!-- Khai báo ngôn ngữ của tài liệu HTML là tiếng Anh -->
+    
+    
+    <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="images/CMC logo.png" rel="shortcut icon">
-    <!-- Required meta tags-->
+    <!-- Required meta tags-->    
+    <!-- Định nghĩa kiểu ký tự (UTF-8) để hỗ trợ hiển thị tiếng Việt và các ngôn ngữ khác -->
     <meta charset="UTF-8">
+    <!-- Cấu hình trang web hiển thị tốt trên các thiết bị di động -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <!-- Mô tả ngắn gọn nội dung trang web -->
+    <meta name="description" content="Chiêu Minh Các">
+    <!-- Tên tác giả của trang web -->
+    <meta name="author" content="Nhóm 3">
+    <!-- Các từ khóa để SEO, giúp tăng khả năng tìm thấy trên công cụ tìm kiếm -->
+    <meta name="keywords" content="Chiêu Minh Các Việt phục">
+
 
     <!-- Title Page-->
-    <title>Thêm sản phẩm</title>
+    <!-- Tiêu đề hiển thị trên tab trình duyệt -->
+    <title>Thêm danh mục</title>
+
 
     <!-- Fontfaces CSS-->
+    <!-- Đường dẫn đến các file CSS định nghĩa font chữ -->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
+
     <!-- Bootstrap CSS-->
+    <!-- CSS từ Bootstrap giúp trang web có bố cục đẹp và dễ tùy chỉnh -->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
+
     <!-- Vendor CSS-->
+    <!-- Các thư viện CSS bổ sung từ các bên thứ ba -->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
     <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
@@ -32,7 +53,9 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
+
     <!-- Main CSS-->
+    <!-- CSS chính cho giao diện của trang web -->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <style>
         *{
@@ -45,7 +68,9 @@
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
+         <!--Phần header dành riêng thiết bị di động-->
         <header class="header-mobile d-block d-lg-none">
+            <!--Lớp d-block d-lg-none giúp phần header chỉ hiển thị trên màn hình nhỏ (di động)-->
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <!--Hiển thị logo của trang web theo định dạng trong class header-mobile-inner,
@@ -56,7 +81,7 @@
                         <a class="logo" href="index.html">
                             <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
                         </a>
-                        <!--Đây là nút để hiển thị một menu điều hướng khi người dùng click chuột vào-->
+                        <!--Nút hamburget munu để mở thanh điều hướng-->
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -65,37 +90,38 @@
                     </div>
                 </div>
             </div>
-            <!--Menu được mở ra khi click vào nút 3 gạch trong giao diện desktop-->
+            <!--Thanh điều hướng cho thiết bị di động-->
             <nav class="navbar-mobile">
                 <div class="container-fluid">
-                    <!--Chỉ định class cho phần menu điều hướng trên thiết bị di động, bao gồm class về định dạng
-                    và loại bỏ các gạch đầu dòng mặc định của danh sách (list-unstyled)-->
+                    <!--Danh sách các liên kết trong menu-->
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="admin.html">
-                                <!--Hiển thị icon fa-home từ thư viện fas và một
-                            mục Bảng điều khiển trong menu, tương tự với các mục phía dưới,
-                            tùy theo tên danh mục sẽ lựa chọnicon phù hợp-->
+                                <!--Biểu tượng ngôi nhà và liên kết đến trang chính admin-->
                                 <i class="fas fa-home"></i>Bảng điều khiển
                             </a>
                         </li>
                         <li>
                             <a href="product.html">
+                                <!--Liên kết đến trang sản phẩm-->
                                 <i class="fas fa-cubes"></i>Sản phẩm
                             </a>
                         </li>
                         <li>
                             <a href="catagory.html">
+                                <!--Liên kết đến trang danh mục-->
                                 <i class="fas fa-tags"></i>Danh mục
                             </a>
                         </li>
                         <li>
                             <a href="saleprog.html">
+                                <!--Liên kết đến trang khuyến mãi-->
                                 <i class="fas fa-percent"></i>Khuyến mãi
                             </a>
                         </li>
                         <li>
                             <a href="Order.html">
+                                <!--Liên kết đến trang đơn hàng-->
                                 <i class="fas fa-shopping-cart"></i>Đơn hàng
                             </a>
                         </li>
@@ -104,42 +130,51 @@
             </nav>
         </header>
         <!-- END HEADER MOBILE-->
+    
         <!-- MENU SIDEBAR-->
-        <!--Logo và thanh menu bên phải đối với màn hình desktop, nội dung của menu tương tự
-            như của mobile nhưng thay đổi class để menu được hiển thị một cách phù hợp-->
+        <!--Phần logo nằm ở trên cùng sidebar-->
         <aside class="menu-sidebar d-none d-lg-block">
             <!--Hiển thị logo-->
             <div class="logo">
                 <a href="index.html">
+                    <!--Logo liên kết về trang chủ-->
                     <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
                 </a>
             </div>
-            <!--Hiển thị menu-->
+            <!--Nội dung của sidebar-->
             <div class="menu-sidebar__content js-scrollbar1">
+                <!--Thanh điều hướng của sidebar-->
                 <nav class="navbar-sidebar">
+                    <!--Danh sách các mục trong menu-->
                     <ul class="list-unstyled navbar__list">
+                        <!--Trang admin mục chính-->
                         <li class="has-sub">
                             <a class="js-arrow" href="admin.html">
+                                <!--Biểu tượng liên kết đến trang admin-->
                                 <i class="fas fa-home"></i>Bảng điều khiển
                             </a>
                         </li>
                         <li>
                             <a href="product.html">
+                                <!--Biểu tượng liên kết đến trang sản phẩm-->
                                 <i class="fas fa-cubes"></i>Sản phẩm
                             </a>
                         </li>
                         <li>
                             <a href="catagory.html">
+                                <!--Biểu tượng liên kết đến trang danh mục-->
                                 <i class="fas fa-tags"></i>Danh mục
                             </a>
                         </li>
                         <li>
                             <a href="saleprog.html">
+                                <!--Biểu tượng liên kết đến trang khuyến mãi-->
                                 <i class="fas fa-percent"></i>Khuyến mãi
                             </a>
                         </li>
                         <li>
                             <a href="Order.html">
+                                <!--Biểu tượng liên kết đến trang đơn hàng-->
                                 <i class="fas fa-shopping-cart"></i>Đơn hàng
                             </a>
                         </li>
@@ -156,8 +191,11 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
+                            <!--Khu vực các nút chức năng ở header-->
                             <div class="header-button">
+                                <!--Khu vực thông báo-->
                                 <div class="noti-wrap"></div>
+                                <!--Khu vực thông tin tài khoản-->
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <!--Hiển thị ảnh avatar admin trên thanh header-->
@@ -168,10 +206,9 @@
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">Mỹ Phường</a>
                                         </div>
-                                        <!--Dropdown xuất hiện khi nhấn vào ảnh hoặc tên admin, những nội dung trong
-                                            thẻ này chỉ xuất hiện khi nhấn vào tài khoản admin trên thanh header-->
+                                        <!--Dropdown chi tiết tài khoản-->
                                         <div class="account-dropdown js-dropdown">
-                                            <!--Định dạng cách hiển thị ảnh avatar và tên admin và email theo class được chỉnh định-->
+                                            <!--Thông tin cá nhân-->
                                             <div class="info clearfix">
                                                 <!--Hiển thị ảnh avatar admin-->
                                                 <div class="image">
@@ -187,8 +224,7 @@
                                                     <span class="email">myphuong@gmail.com</span>
                                                 </div>
                                             </div>
-                                            <!-- Những tính năng có để quản lý tài khoản admin bao gồm tài khoản, cài đặt, 
-                                                thanh toán và Đăng xuất-->
+                                            <!-- Các mục khác trong dropdown-->
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
@@ -201,6 +237,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <!-- Footer dropdown: Đăng xuất-->
                                             <div class="account-dropdown__footer">
                                                 <a href="#">
                                                     <i class="zmdi zmdi-power"></i>Đăng xuất
@@ -218,118 +255,132 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
+                <!-- Khu vực nội dung chính của trang -->
                 <div class="section__content section__content--p30">
+                    <!-- Phần này sử dụng lớp "container-fluid" để tạo bố cục đáp ứng -->
                     <div class="container-fluid">
-                        <!-- <div class=""> -->
+                        <!-- Khung chứa toàn bộ nội dung liên quan đến việc thêm sản phẩm -->
                         <div class="card">
+                            <!-- Tiêu đề của form -->
                             <div class="card-header">
                                 <strong>Thêm sản phẩm mới</strong>
                             </div>
+                            <!-- Nội dung của form -->
                             <div class="card-body card-block">
                                 <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <!-- Trường nhập tên sản phẩm -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường tên sản phẩm-->
+                                        <!-- Hiển thị nhãn của trường tên sản phẩm -->
                                         <div class="col col-md-3">
-                                            <label for="name" class=" form-control-label">Tên sản phẩm*</label>
+                                            <label for="name" class="form-control-label">Tên sản phẩm*</label>
                                         </div>
-                                        <!--Vị trí để nhập tên sản phẩm và sẽ hiển thị văn bản Tên khi trường này trống-->
+                                        <!-- Vị trí để nhập tên sản phẩm -->
                                         <div class="col-12 col-md-9">
                                             <input type="text" id="name" name="name" placeholder="Tên" class="form-control">
                                         </div>
                                     </div>
+                                    <!-- Trường nhập mã sản phẩm -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường mã sản phẩm-->
+                                        <!-- Hiển thị nhãn của trường mã sản phẩm -->
                                         <div class="col col-md-3">
-                                            <label for="idt" class=" form-control-label">Mã sản phẩm*</label>
+                                            <label for="idt" class="form-control-label">Mã sản phẩm*</label>
                                         </div>
-                                        <!--Vị trí để nhập mã sản phẩm và sẽ hiển thị văn bản tên khi trường này trống-->
+                                        <!-- Vị trí để nhập mã sản phẩm -->
                                         <div class="col-12 col-md-9">
                                             <input type="text" id="idt" name="idt" placeholder="Mã" class="form-control">
                                         </div>
                                     </div>
+                                    <!-- Trường nhập giá sản phẩm -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường Giá sản phẩm-->
+                                        <!-- Hiển thị nhãn của trường giá sản phẩm -->
                                         <div class="col col-md-3">
-                                            <label for="price" class=" form-control-label">Giá sản phẩm</label>
+                                            <label for="price" class="form-control-label">Giá sản phẩm</label>
                                         </div>
-                                        <!--Vị trí để nhập giá sản phẩm và sẽ hiển thị văn bản giá khi trường này trống-->
+                                        <!-- Vị trí để nhập giá sản phẩm -->
                                         <div class="col-12 col-md-9">
                                             <input type="text" id="price" name="price" placeholder="Giá" class="form-control">
                                         </div>
                                     </div>
+                                    <!-- Trường nhập giá khuyến mãi -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường Giá khuyến mãi-->
+                                        <!-- Hiển thị nhãn của trường giá khuyến mãi -->
                                         <div class="col col-md-3">
-                                            <label for="sale_price" class=" form-control-label">Giá khuyến mãi</label>
+                                            <label for="sale_price" class="form-control-label">Giá khuyến mãi</label>
                                         </div>
-                                        <!--Vị trí để nhập giá khuyến mãi sản phẩm và sẽ hiển thị văn bản Giá khuyến mãi khi trường này trống-->
+                                        <!-- Vị trí để nhập giá khuyến mãi -->
                                         <div class="col-12 col-md-9">
                                             <input type="text" id="sale_price" name="sale_price" placeholder="Giá khuyến mãi" class="form-control">
                                         </div>
                                     </div>
+                                    <!-- Trường nhập số lượng tồn kho -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường số lượng tồn kho-->
+                                        <!-- Hiển thị nhãn của trường số lượng tồn kho -->
                                         <div class="col col-md-3">
-                                            <label for="stock" class=" form-control-label">Số lượng tồn kho</label>
+                                            <label for="stock" class="form-control-label">Số lượng tồn kho</label>
                                         </div>
-                                        <!--Vị trí để nhập số lượng tồn kho của sản phẩm và sẽ hiển thị văn bản Số lượng khi trường này trống-->
+                                        <!-- Vị trí để nhập số lượng tồn kho -->
                                         <div class="col-12 col-md-9">
                                             <input type="number" id="stock" name="stock" placeholder="Số lượng" class="form-control">
                                         </div>
                                     </div>
+                                    <!-- Trường nhập mô tả sản phẩm -->
                                     <div class="row form-group">
+                                        <!-- Hiển thị nhãn của trường mô tả sản phẩm -->
                                         <div class="col col-md-3">
-                                            <!--Hiển thị nhãn của trường mô tả sản phẩm-->
-                                            <label for="description" class=" form-control-label">Mô tả sản phẩm</label>
+                                            <label for="description" class="form-control-label">Mô tả sản phẩm</label>
                                         </div>
-                                        <!--Vị trí để nhập mô tả của sản phẩm và sẽ hiển thị văn bản Nội dung... khi trường này trống-->
+                                        <!-- Vị trí để nhập mô tả sản phẩm -->
                                         <div class="col-12 col-md-9">
                                             <textarea name="description" id="description" rows="9" placeholder="Nội dung..." class="form-control"></textarea>
                                         </div>
                                     </div>
+                                    <!-- Trường chọn danh mục sản phẩm -->
                                     <div class="row form-group">
-                                        <!--Hiển thị nhãn của trường danh mục sản phẩm-->
+                                        <!-- Hiển thị nhãn của trường danh mục sản phẩm -->
                                         <div class="col col-md-3">
-                                            <label for="catagory" class=" form-control-label">Danh mục sản phẩm</label>
+                                            <label for="catagory" class="form-control-label">Danh mục sản phẩm</label>
                                         </div>
-                                        <!--Người dùng có thể lựa chọn 1 trong các danh mục của sản phẩm -->
+                                        <!-- Dropdown để chọn danh mục sản phẩm -->
                                         <div class="col-12 col-md-9">
                                             <select name="catagory" id="catagory" class="form-control">
-                                                        <option value="0">Danh mục</option>
-                                                        <option value="1">Nam</option>
-                                                        <option value="2">Nữ</option>
-                                                        <option value="3">Nhật Bình</option>
-                                                    </select>
+                                                <option value="0">Danh mục</option>
+                                                <option value="1">Nam</option>
+                                                <option value="2">Nữ</option>
+                                                <option value="3">Nhật Bình</option>
+                                            </select>
                                         </div>
                                     </div>
+
+
                                     <!--Nhập ảnh sản phẩm-->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
+                                            <!-- Nhãn cho trường nhập ảnh sản phẩm -->
                                             <label for="single-image-input" class="form-control-label">Ảnh sản phẩm</label>
                                         </div>
                                         <div class="col-12 col-md-9" style="display: flex; align-items: center;">
-                                            <!--Đây là một nút với sự kiện onclick được đặt để kích hoạt sự kiện click trên một phần tử khác có id là single-image-input-->
+                                            <!-- Nút nhấn thêm ảnh, kích hoạt sự kiện onclick để mở hộp thoại chọn file -->
                                             <button type="button" onclick="document.getElementById('single-image-input').click();">Thêm ảnh</button>
-                                            <!--Đây là một trường nhập file, nhưng nó được ẩn (style="display: none;"). Khi người dùng chọn một tệp, sự kiện onchange sẽ kích hoạt hàm displaySingleImage().-->
+                                            <!-- Trường nhập file cho ảnh sản phẩm, ẩn đi bằng style và kích hoạt bằng nút nhấn -->
                                             <input type="file" id="single-image-input" name="single-image-input" class="form-control-file" style="display: none;" onchange="displaySingleImage();">
-                                            <!--hiển thị hình ảnh mà người dùng đã chọn. Nó có lề trái là 10px.-->
+                                            <!-- Khu vực hiển thị hình ảnh đã chọn, được căn chỉnh cách lề trái 10px -->
                                             <div id="single-image-container" style="margin-left: 10px;"></div>
                                         </div>
                                     </div>
+
+
                                     <!--Nhập album ảnh sản phẩm-->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
-                                            <!--Đây là một nhãn cho trường nhập file, với nội dung là “Album ảnh sản phẩm”.-->
+                                            <!-- Nhãn cho trường nhập album ảnh sản phẩm -->
                                             <label for="file-multiple-input" class="form-control-label">Album ảnh sản phẩm</label>
                                         </div>
                                         <div class="col-12 col-md-9" style="display: flex; flex-wrap: wrap; align-items: center;">
-                                            <!--Đây là một nút với sự kiện onclick được đặt để kích hoạt sự kiện click trên một phần tử khác có id là file-multiple-input.-->
+                                            <!-- Nút nhấn thêm album ảnh, kích hoạt sự kiện onclick để mở hộp thoại chọn file -->
                                             <button type="button" onclick="document.getElementById('file-multiple-input').click();">Thêm bộ sưu tập</button>
-                                            <!-- trường nhập file, nhưng nó được ẩn (style="display: none;"). Khi người dùng chọn một hoặc nhiều tệp (do thuộc tính multiple), 
-                                                        sự kiện onchange sẽ kích hoạt hàm addImagesToAlbum()-->
+                                            <!-- Trường nhập file cho album ảnh sản phẩm, hỗ trợ chọn nhiều file (multiple) -->
                                             <input type="file" id="file-multiple-input" name="file-multiple-input" multiple class="form-control-file" style="display: none;" onchange="addImagesToAlbum();">
-                                            <!--hiển thị các hình ảnh mà người dùng đã chọn. Nó có lề trái là 10px và được đặt để hiển thị dưới dạng flexbox với flex-wrap: wrap, 
-                                                        cho phép các hình ảnh ngắt dòng nếu không đủ không gian.-->
+                                            <!-- Khu vực hiển thị album ảnh đã chọn, sử dụng flexbox với flex-wrap để các ảnh ngắt dòng nếu không đủ không gian -->
                                             <div id="album-container" style="display: flex; flex-wrap: wrap; margin-left: 10px;">
                                             </div>
                                         </div>
@@ -337,6 +388,7 @@
                                 </form>
                             </div>
                             <div class="card-footer">
+                                <!-- Nút đăng sản phẩm-->
                                 <button type="button" class="btn btn-primary btn-sm" onclick="validateFieldsAndRedirect();">
                                             <i class="fa fa-dot-circle-o"></i> Đăng sản phẩm
                                         </button>
@@ -349,7 +401,9 @@
             </div>
         </div>
 
+
     </div>
+
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
@@ -372,10 +426,13 @@
     <script src="vendor/select2/select2.min.js">
     </script>
 
+
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
+
 </body>
+
 
 </html>
 <!-- end document-->

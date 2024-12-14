@@ -1,29 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--Nhóm xin phép được comment vào các câu lệnh và đoạn code được xuất hiện lần đầu trong page ạ;
+    Những đoạn code tiếp theo có cấu trúc và các lệnh tương tự nhóm xin phép không comment lại ạ, nhóm cảm ơn thầy ạ!
+    Riêng thẻ phần khai báo đầu của các file html và các đoạn code khai báo cho footer, header nhóm xin phép chỉ để
+    comment trong file index (trang chủ) vì các nội dung này giống nhau ở tất cả các file-->
 
-<head>
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <!-- Khai báo ngôn ngữ của tài liệu HTML là tiếng Anh -->
+    
+    
+    <head>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="images/CMC logo.png" rel="shortcut icon">
-    <!-- Required meta tags-->
+    <!-- Required meta tags-->    
+    <!-- Định nghĩa kiểu ký tự (UTF-8) để hỗ trợ hiển thị tiếng Việt và các ngôn ngữ khác -->
     <meta charset="UTF-8">
+    <!-- Cấu hình trang web hiển thị tốt trên các thiết bị di động -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <!-- Mô tả ngắn gọn nội dung trang web -->
+    <meta name="description" content="Chiêu Minh Các">
+    <!-- Tên tác giả của trang web -->
+    <meta name="author" content="Nhóm 3">
+    <!-- Các từ khóa để SEO, giúp tăng khả năng tìm thấy trên công cụ tìm kiếm -->
+    <meta name="keywords" content="Chiêu Minh Các Việt phục">
+
 
     <!-- Title Page-->
-    <title>Thêm khuyến mãi</title>
+    <!-- Tiêu đề hiển thị trên tab trình duyệt -->
+    <title>Thêm danh mục</title>
+
 
     <!-- Fontfaces CSS-->
+    <!-- Đường dẫn đến các file CSS định nghĩa font chữ -->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
+
     <!-- Bootstrap CSS-->
+    <!-- CSS từ Bootstrap giúp trang web có bố cục đẹp và dễ tùy chỉnh -->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
+
     <!-- Vendor CSS-->
+    <!-- Các thư viện CSS bổ sung từ các bên thứ ba -->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
     <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
@@ -32,7 +53,9 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
+
     <!-- Main CSS-->
+    <!-- CSS chính cho giao diện của trang web -->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <style>
         *{
@@ -45,7 +68,9 @@
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
+         <!--Phần header dành riêng thiết bị di động-->
         <header class="header-mobile d-block d-lg-none">
+            <!--Lớp d-block d-lg-none giúp phần header chỉ hiển thị trên màn hình nhỏ (di động)-->
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <!--Hiển thị logo của trang web theo định dạng trong class header-mobile-inner,
@@ -56,7 +81,7 @@
                         <a class="logo" href="index.html">
                             <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
                         </a>
-                        <!--Đây là nút để hiển thị một menu điều hướng khi người dùng click chuột vào-->
+                        <!--Nút hamburget munu để mở thanh điều hướng-->
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
@@ -65,37 +90,38 @@
                     </div>
                 </div>
             </div>
-            <!--Menu được mở ra khi click vào nút 3 gạch trong giao diện desktop-->
+            <!--Thanh điều hướng cho thiết bị di động-->
             <nav class="navbar-mobile">
                 <div class="container-fluid">
-                    <!--Chỉ định class cho phần menu điều hướng trên thiết bị di động, bao gồm class về định dạng
-                    và loại bỏ các gạch đầu dòng mặc định của danh sách (list-unstyled)-->
+                    <!--Danh sách các liên kết trong menu-->
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
                             <a class="js-arrow" href="admin.html">
-                                <!--Hiển thị icon fa-home từ thư viện fas và một
-                            mục Bảng điều khiển trong menu, tương tự với các mục phía dưới,
-                            tùy theo tên danh mục sẽ lựa chọnicon phù hợp-->
+                                <!--Biểu tượng ngôi nhà và liên kết đến trang chính admin-->
                                 <i class="fas fa-home"></i>Bảng điều khiển
                             </a>
                         </li>
                         <li>
                             <a href="product.html">
+                                <!--Liên kết đến trang sản phẩm-->
                                 <i class="fas fa-cubes"></i>Sản phẩm
                             </a>
                         </li>
                         <li>
                             <a href="catagory.html">
+                                <!--Liên kết đến trang danh mục-->
                                 <i class="fas fa-tags"></i>Danh mục
                             </a>
                         </li>
                         <li>
                             <a href="saleprog.html">
+                                <!--Liên kết đến trang khuyến mãi-->
                                 <i class="fas fa-percent"></i>Khuyến mãi
                             </a>
                         </li>
                         <li>
                             <a href="Order.html">
+                                <!--Liên kết đến trang đơn hàng-->
                                 <i class="fas fa-shopping-cart"></i>Đơn hàng
                             </a>
                         </li>
@@ -104,42 +130,51 @@
             </nav>
         </header>
         <!-- END HEADER MOBILE-->
+    
         <!-- MENU SIDEBAR-->
-        <!--Logo và thanh menu bên phải đối với màn hình desktop, nội dung của menu tương tự
-            như của mobile nhưng thay đổi class để menu được hiển thị một cách phù hợp-->
+        <!--Phần logo nằm ở trên cùng sidebar-->
         <aside class="menu-sidebar d-none d-lg-block">
             <!--Hiển thị logo-->
             <div class="logo">
                 <a href="index.html">
+                    <!--Logo liên kết về trang chủ-->
                     <img src="images/logo/logo.png" alt="Chiêu Minh Các" />
                 </a>
             </div>
-            <!--Hiển thị menu-->
+            <!--Nội dung của sidebar-->
             <div class="menu-sidebar__content js-scrollbar1">
+                <!--Thanh điều hướng của sidebar-->
                 <nav class="navbar-sidebar">
+                    <!--Danh sách các mục trong menu-->
                     <ul class="list-unstyled navbar__list">
+                        <!--Trang admin mục chính-->
                         <li class="has-sub">
                             <a class="js-arrow" href="admin.html">
+                                <!--Biểu tượng liên kết đến trang admin-->
                                 <i class="fas fa-home"></i>Bảng điều khiển
                             </a>
                         </li>
                         <li>
                             <a href="product.html">
+                                <!--Biểu tượng liên kết đến trang sản phẩm-->
                                 <i class="fas fa-cubes"></i>Sản phẩm
                             </a>
                         </li>
                         <li>
                             <a href="catagory.html">
+                                <!--Biểu tượng liên kết đến trang danh mục-->
                                 <i class="fas fa-tags"></i>Danh mục
                             </a>
                         </li>
                         <li>
                             <a href="saleprog.html">
+                                <!--Biểu tượng liên kết đến trang khuyến mãi-->
                                 <i class="fas fa-percent"></i>Khuyến mãi
                             </a>
                         </li>
                         <li>
                             <a href="Order.html">
+                                <!--Biểu tượng liên kết đến trang đơn hàng-->
                                 <i class="fas fa-shopping-cart"></i>Đơn hàng
                             </a>
                         </li>
@@ -156,8 +191,11 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
+                            <!--Khu vực các nút chức năng ở header-->
                             <div class="header-button">
+                                <!--Khu vực thông báo-->
                                 <div class="noti-wrap"></div>
+                                <!--Khu vực thông tin tài khoản-->
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <!--Hiển thị ảnh avatar admin trên thanh header-->
@@ -168,10 +206,9 @@
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">Mỹ Phường</a>
                                         </div>
-                                        <!--Dropdown xuất hiện khi nhấn vào ảnh hoặc tên admin, những nội dung trong
-                                            thẻ này chỉ xuất hiện khi nhấn vào tài khoản admin trên thanh header-->
+                                        <!--Dropdown chi tiết tài khoản-->
                                         <div class="account-dropdown js-dropdown">
-                                            <!--Định dạng cách hiển thị ảnh avatar và tên admin và email theo class được chỉnh định-->
+                                            <!--Thông tin cá nhân-->
                                             <div class="info clearfix">
                                                 <!--Hiển thị ảnh avatar admin-->
                                                 <div class="image">
@@ -187,8 +224,7 @@
                                                     <span class="email">myphuong@gmail.com</span>
                                                 </div>
                                             </div>
-                                            <!-- Những tính năng có để quản lý tài khoản admin bao gồm tài khoản, cài đặt, 
-                                                thanh toán và Đăng xuất-->
+                                            <!-- Các mục khác trong dropdown-->
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
@@ -201,6 +237,7 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                            <!-- Footer dropdown: Đăng xuất-->
                                             <div class="account-dropdown__footer">
                                                 <a href="#">
                                                     <i class="zmdi zmdi-power"></i>Đăng xuất
@@ -216,152 +253,213 @@
             </header>
             <!-- HEADER DESKTOP-->
 
-            <!-- MAIN CONTENT-->
+            <!-- MAIN CONTENT -->
             <div class="main-content">
+                <!-- Phần nội dung chính -->
                 <div class="section__content section__content--p30">
+                    <!-- Định nghĩa một khu vực nội dung với padding 30px -->
                     <div class="container-fluid">
-                        <!-- <div class=""> -->
+                        <!-- Container để nội dung được căn chỉnh theo dạng fluid -->
                         <div class="card">
+                            <!-- Thẻ `card` bao quanh phần nội dung, thường dùng để nhóm thông tin -->
                             <div class="card-header">
-                                <strong>Thêm Khuyến mãi mới</strong>
+                                <!-- Header của thẻ card -->
+                                <strong>Thêm chương trình khuyến mãi mới</strong>
+                                <!-- Tiêu đề hiển thị đậm -->
                             </div>
                             <div class="card-body card-block">
+                                <!-- Nội dung chính của card -->
                                 <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <!-- Form nhập dữ liệu, với phương thức POST -->
+                                    <!-- Thuộc tính enctype="multipart/form-data" để hỗ trợ tải tệp -->
+                                    <!-- Lớp `form-horizontal` để căn chỉnh các trường nhập liệu theo hàng ngang -->
+
+
+                                    <!-- Nhập Tên chương trình khuyến mãi -->
                                     <div class="row form-group">
+                                        <!-- Một hàng với nhóm trường form -->
                                         <div class="col col-md-3">
-                                            <label for="name" class=" form-control-label">Tên Khuyến mãi*</label>
+                                            <!-- Cột đầu tiên chiếm 3 cột của Bootstrap -->
+                                            <label for="name" class="form-control-label">Tên chương trình khuyến mãi*</label>
+                                            <!-- Nhãn của trường nhập liệu, với `for` liên kết với `id="name"` -->
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Cột thứ hai chiếm 9 cột -->
                                             <input type="name" id="name" name="text-input" placeholder="Tên" class="form-control">
+                                            <!-- Trường nhập liệu để nhập tên chương trình -->
                                         </div>
                                     </div>
+
+
+                                    <!-- Nhập Mã chương trình -->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
-                                            <label for="idt" class=" form-control-label">Mã chương trình*</label>
+                                            <label for="idt" class="form-control-label">Mã chương trình*</label>
                                         </div>
                                         <div class="col-12 col-md-9">
                                             <input type="text" id="idt" name="idt" placeholder="Mã" class="form-control">
+                                            <!-- Trường nhập liệu cho mã chương trình -->
                                         </div>
                                     </div>
+
+
+                                    <!-- Nhập Mô tả chương trình -->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
-                                            <label for="textarea-input" class=" form-control-label">Mô tả chương trình</label>
+                                            <label for="textarea-input" class="form-control-label">Mô tả chương trình</label>
                                         </div>
                                         <div class="col-12 col-md-9">
                                             <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Nội dung..." class="form-control"></textarea>
+                                            <!-- Ô nhập văn bản nhiều dòng -->
                                         </div>
                                     </div>
+
+
+                                    <!-- Nhập Ngày bắt đầu -->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
                                             <label for="date-input" class="form-control-label">Ngày bắt đầu</label>
                                         </div>
                                         <div class="col-12 col-md-9">
                                             <input type="date" id="date-input" name="date-input" placeholder="Chọn ngày" class="form-control">
+                                            <!-- Trường nhập liệu dạng ngày -->
                                         </div>
                                     </div>
+
+
+                                    <!-- Nhập Ngày kết thúc -->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
                                             <label for="date-input" class="form-control-label">Ngày kết thúc</label>
                                         </div>
                                         <div class="col-12 col-md-9">
                                             <input type="date" id="date-input" name="date-input" placeholder="Chọn ngày" class="form-control">
+                                            <!-- Trường nhập liệu dạng ngày -->
                                         </div>
                                     </div>
+
+
+                                    <!-- Checkbox Sử dụng với chương trình khác -->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
-                                            <label class=" form-control-label">Sử dụng với các chương trình khác</label>
+                                            <label class="form-control-label">Sử dụng với các chương trình khác</label>
+                                            <!-- Nhãn không cần liên kết `for` vì chỉ có một checkbox -->
                                         </div>
                                         <div class="col col-md-9">
-                                            <input type="checkbox" class="checkbox" />
+                                            <input type="checkbox" class="checkbox">
+                                            <!-- Trường checkbox để chọn tùy chọn -->
                                         </div>
                                     </div>
 
+
+
+
                                     <div class="row form-group">
+                                        <!-- Nhóm form để chọn loại khuyến mãi -->
                                         <div class="col col-md-3">
-                                            <label for="select" class=" form-control-label">Loại khuyến mãi</label>
+                                            <!-- Nhãn cho menu thả xuống chọn loại khuyến mãi -->
+                                            <label for="select" class="form-control-label">Loại khuyến mãi</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Menu thả xuống để chọn loại khuyến mãi -->
                                             <select name="select" id="select" class="form-control">
-                                                        <option value="0">Loại khuyến mãi</option>
-                                                        <option value="1">Giảm giá</option>
-                                                        <option value="2">Miễn phí vận chuyển</option>
-                                                        <option value="3">Tặng sản phẩm</option>
-                                                    </select>
+                                                <option value="0">Loại khuyến mãi</option> <!-- Lựa chọn mặc định -->
+                                                <option value="1">Giảm giá</option> <!-- Lựa chọn: Giảm giá -->
+                                                <option value="2">Miễn phí vận chuyển</option> <!-- Lựa chọn: Miễn phí vận chuyển -->
+                                                <option value="3">Tặng sản phẩm</option> <!-- Lựa chọn: Tặng sản phẩm -->
+                                            </select>
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập giới hạn số lượng khuyến mãi -->
                                         <div class="col col-md-3">
-                                            <label for="text-input" class=" form-control-label">Giới hạn (để trống nếu không giới hạn)</label>
+                                            <!-- Nhãn cho trường nhập số lượng giới hạn -->
+                                            <label for="text-input" class="form-control-label">Giới hạn (để trống nếu không giới hạn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Trường nhập số lượng giới hạn -->
                                             <input type="number" id="number-input" name="number-input" placeholder="Số lượng" class="form-control">
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập số tiền được giảm -->
                                         <div class="col col-md-3">
-                                            <label for="tienGiam" class=" form-control-label">Số tiền được giảm (Tùy chọn)</label>
+                                            <!-- Nhãn cho trường nhập số tiền giảm -->
+                                            <label for="tienGiam" class="form-control-label">Số tiền được giảm (Tùy chọn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Trường nhập số tiền giảm -->
                                             <input type="text" id="tienGiam" name="tienGiam" placeholder="Số tiền được giảm" class="form-control">
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập số tiền mua tối thiểu -->
                                         <div class="col col-md-3">
-                                            <label for="tienMin" class=" form-control-label">Số tiền mua tổi thiểu (Tùy chọn)</label>
+                                            <!-- Nhãn cho trường nhập số tiền mua tối thiểu -->
+                                            <label for="tienMin" class="form-control-label">Số tiền mua tổi thiểu (Tùy chọn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="tienMin" name="tienMin" placeholder="Số tiền mua tổi thiểu" class="form-control">
+                                            <!-- Trường nhập số tiền mua tối thiểu -->
+                                            <input type="text" id="tienMin" name="tienMin" placeholder="Số tiền mua tối thiểu" class="form-control">
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập mã voucher giảm giá -->
                                         <div class="col col-md-3">
-                                            <label for="voucher" class=" form-control-label">Mã voucher giảm giá (Tùy chọn)</label>
+                                            <!-- Nhãn cho trường nhập mã voucher -->
+                                            <label for="voucher" class="form-control-label">Mã voucher giảm giá (Tùy chọn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Trường nhập mã voucher -->
                                             <input type="text" id="voucher" name="voucher" placeholder="Mã voucher" class="form-control">
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập sản phẩm cần mua -->
                                         <div class="col col-md-3">
-                                            <label for="spCanMua" class=" form-control-label">Sản phẩm cần mua (Tùy chọn) </label>
+                                            <!-- Nhãn cho trường nhập sản phẩm cần mua -->
+                                            <label for="spCanMua" class="form-control-label">Sản phẩm cần mua (Tùy chọn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Trường nhập sản phẩm cần mua -->
                                             <input type="text" id="spCanMua" name="spCanMua" placeholder="Sản phẩm cần mua" class="form-control">
                                         </div>
                                     </div>
-
+                                   
                                     <div class="row form-group">
+                                        <!-- Nhóm form để nhập sản phẩm được tặng -->
                                         <div class="col col-md-3">
-                                            <label for="spTang" class=" form-control-label">Sản phẩm được tặng (Tùy chọn) </label>
+                                            <!-- Nhãn cho trường nhập sản phẩm được tặng -->
+                                            <label for="spTang" class="form-control-label">Sản phẩm được tặng (Tùy chọn)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
+                                            <!-- Trường nhập sản phẩm được tặng -->
                                             <input type="text" id="spTang" name="spTang" placeholder="Mã voucher" class="form-control">
                                         </div>
                                     </div>
-                                </form>
-
-
-
-                            </div>
-                            <div class="card-footer">
-                                <button type="button" class="btn btn-primary btn-sm" onclick="validateFieldsAndRedirectS();">
+                                    </form>
+                                   
+                                    </div>
+                                    <div class="card-footer">
+                                        <!-- Nút để đăng chương trình khuyến mãi -->
+                                        <button type="button" class="btn btn-primary btn-sm" onclick="validateFieldsAndRedirectS();">
                                             <i class="fa fa-dot-circle-o"></i> Đăng chương trình
                                         </button>
-                            </div>
+                                    </div>                                    
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
 
+
     </div>
+
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
@@ -384,10 +482,13 @@
     <script src="vendor/select2/select2.min.js">
     </script>
 
+
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
+
 </body>
+
 
 </html>
 <!-- end document-->

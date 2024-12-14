@@ -17,10 +17,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <!--Thẻ này cung cấp mô tả về nội dung trang web, thường được sử dụng bởi công cụ tìm kiếm khi hiển thị kết quả tìm kiếm. Trong trường hợp này, không có mô tả nào được cung cấp.-->
-        <meta name="description" content="">
+        <meta name="description" content="Chiêu Minh Các">
     
         <!--Thẻ này xác định tác giả của trang web. Trong trường hợp này, không có tên tác giả nào được cung cấp.-->
-        <meta name="author" content="">
+        <meta name="author" content="Nhóm 3">
     
     
         <!--Thẻ link trong HTML, được sử dụng để liên kết tới một tệp tin khác từ trang HTML hiện tại.-->
@@ -201,7 +201,7 @@
                             <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
                             <!--======Tạo responsive design cho header-->
                             <div class="menu-init" id="navigation1">
-                                <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
+                                <button class="btn btn--icon toggle-mega-text toggle-button" type="button"><i class="fas fa-sort-down"></i></button>
     
                                 <!--====== Menu ======-->
                                 <div class="ah-lg-mode">
@@ -748,56 +748,56 @@
     
     
                                                     <!--Xóa sản phẩm ra khỏi giỏ hàng-->
-                                                    <script>
-                                                        document.addEventListener("DOMContentLoaded", function() {
-                                                            // Lấy tất cả các biểu tượng thùng rác
-                                                            var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
-                                                            // Lấy tổng giá trị trong giỏ hàng
-                                                            var subtotalValue = document.querySelector('.subtotal-value');
-                                                            // Lấy phần tử hiển thị số lượng sản phẩm
-                                                            var totalItemRound = document.querySelector('.total-item-round');
-                                                            // Tính tổng giá trị giỏ hàng
-                                                            function updateSubtotal() {
-                                                                let totalCartValue = 0;
-                                                                const productElements = document.querySelectorAll(".mini-product__price");
-                                                                productElements.forEach((productRow) => {
-                                                                    // Lấy giá trị của mỗi sản phẩm và chuyển sang dạng số
-                                                                    const productPrice = parseInt(productRow.textContent.replace(/\D/g, ""));
-                                                                    totalCartValue += productPrice;
-                                                                });
-                                                                // Cập nhật giá trị tổng giỏ hàng
-                                                                if (productElements.length === 0) {
-                                                                    subtotalValue.textContent = "0đ";
-                                                                } else {
-                                                                    subtotalValue.textContent = totalCartValue.toLocaleString("vi-VN") + "đ";
-                                                                }
-                                                                // Cập nhật số lượng sản phẩm trong giỏ hàng
-                                                                updateTotalItems();
+                                                <script>
+                                                    document.addEventListener("DOMContentLoaded", function() {
+                                                        // Lấy tất cả các biểu tượng thùng rác
+                                                        var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
+                                                        // Lấy tổng giá trị trong giỏ hàng
+                                                        var subtotalValue = document.querySelector('.subtotal-value');
+                                                        // Lấy phần tử hiển thị số lượng sản phẩm
+                                                        var totalItemRound = document.querySelector('.total-item-round');
+                                                        // Tính tổng giá trị giỏ hàng
+                                                        function updateSubtotal() {
+                                                            let totalCartValue = 0;
+                                                            const productElements = document.querySelectorAll(".mini-product__price");
+                                                            productElements.forEach((productRow) => {
+                                                                // Lấy giá trị của mỗi sản phẩm và chuyển sang dạng số
+                                                                const productPrice = parseInt(productRow.textContent.replace(/\D/g, ""));
+                                                                totalCartValue += productPrice;
+                                                            });
+                                                            // Cập nhật giá trị tổng giỏ hàng
+                                                            if (productElements.length === 0) {
+                                                                subtotalValue.textContent = "0đ";
+                                                            } else {
+                                                                subtotalValue.textContent = totalCartValue.toLocaleString("vi-VN") + "đ";
                                                             }
                                                             // Cập nhật số lượng sản phẩm trong giỏ hàng
-                                                            function updateTotalItems() {
-                                                                const totalItems = document.querySelectorAll('.card-mini-product').length;
-                                                                if (totalItems === 0) {
-                                                                    totalItemRound.textContent = "0";
-                                                                } else {
-                                                                    totalItemRound.textContent = totalItems;
-                                                                }
+                                                            updateTotalItems();
+                                                        }
+                                                        // Cập nhật số lượng sản phẩm trong giỏ hàng
+                                                        function updateTotalItems() {
+                                                            const totalItems = document.querySelectorAll('.card-mini-product').length;
+                                                            if (totalItems === 0) {
+                                                                totalItemRound.textContent = "0";
+                                                            } else {
+                                                                totalItemRound.textContent = totalItems;
                                                             }
-                                                            // Gán sự kiện click cho mỗi biểu tượng trash
-                                                            deleteButtons.forEach(function(button) {
-                                                                button.addEventListener('click', function() {
-                                                                    // Lấy phần tử sản phẩm chứa biểu tượng trash (card-mini-product)
-                                                                    var cardElement = button.closest('.card-mini-product');
-                                                                    // Xóa phần tử sản phẩm này (card-mini-product)
-                                                                    cardElement.remove();
-                                                                    // Cập nhật lại subtotal và số lượng sản phẩm sau khi xóa sản phẩm
-                                                                    updateSubtotal();
-                                                                });
+                                                        }
+                                                        // Gán sự kiện click cho mỗi biểu tượng trash
+                                                        deleteButtons.forEach(function(button) {
+                                                            button.addEventListener('click', function() {
+                                                                // Lấy phần tử sản phẩm chứa biểu tượng trash (card-mini-product)
+                                                                var cardElement = button.closest('.card-mini-product');
+                                                                // Xóa phần tử sản phẩm này (card-mini-product)
+                                                                cardElement.remove();
+                                                                // Cập nhật lại subtotal và số lượng sản phẩm sau khi xóa sản phẩm
+                                                                updateSubtotal();
                                                             });
-                                                            // Cập nhật subtotal và số lượng sản phẩm khi tải trang lần đầu
-                                                            updateSubtotal();
                                                         });
-                                                    </script>
+                                                        // Cập nhật subtotal và số lượng sản phẩm khi tải trang lần đầu
+                                                        updateSubtotal();
+                                                    });
+                                                </script>
                                                     <!--====== Kết thúc giỏ hàng mini  ======-->
                                                 </div>
                                                 <!--====== End - Mini Product Container ======-->
@@ -967,9 +967,7 @@
     
                                                                 <span class="w-r__price">
                                                                     650.000 đ
-    
-                                                                    <span class="w-r__discount">700.000₫</span>
-                                                                </span>
+                                                                    </span>
                                                             </div>
                                                         </div>
     
@@ -1005,8 +1003,8 @@
                                                                     <a href="shop-grid-left.html">Giáp gồm Tay + Chân + Bụng </a>
                                                                 </span>
                                                                 <span class="w-r__price">
-                                                                    5.000.000 đ
-                                                                    <span class="w-r__discount">5.500.000₫</span>
+                                                                    3.237.000 đ
+                                                                    <span class="w-r__discount">4.980.000₫</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -1034,8 +1032,8 @@
                                                                     <a href="shop-grid-left.html">Ngà bài </a>
                                                                 </span>
                                                                 <span class="w-r__price">
-                                                                    109.000₫
-                                                                    <span class="w-r__discount">120.000₫</span>
+                                                                    250.000₫
+                                                                    <span class="w-r__discount">300.000₫</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -1104,19 +1102,19 @@
                                                             <div id="js-product-detail-modal">
                                                                 <div>
     
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                                                 </div>
     
                                                             </div>
@@ -1125,19 +1123,19 @@
                                                             <div id="js-product-detail-modal-thumbnail">
                                                                 <div>
     
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                                                 </div>
                                                                 <div>
-    
-                                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+                        
+                                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                                                 </div>
     
                                                             </div>
@@ -1288,10 +1286,11 @@
                             <div class="modal fade" id="add-to-cart">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content modal-radius modal-shadow">
-    
+                                        <!--Nút đóng-->
                                         <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
                                         <div class="modal-body">
                                             <div class="row">
+                                                <!--Phần hiển thị thêm sản phẩm thành công-->
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="success u-s-m-b-30">
                                                         <div class="success__text-wrap">
@@ -1299,9 +1298,10 @@
     
                                                             <span>Sản phẩm  đã được thêm vào giỏ hàng thành công!</span>
                                                         </div>
+                                                        <!--Hình ảnh sản phẩm-->
                                                         <div class="success__img-wrap">
     
-                                                            <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                            <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                                         </div>
                                                         <div class="success__info-wrap">
     
@@ -1315,12 +1315,13 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!--Phần hiển thị thông tin và các tùy chọn-->
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="s-option">
     
                                                         <span class="s-option__text">1 sản phẩm trong giỏ hàng của bạn</span>
                                                         <div class="s-option__link-box">
-    
+                                                            <!--Các liên kết chuyển hướng-->
                                                             <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP TỤC MUA SẮM</a>
     
                                                             <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">XEM GIỎ HÀNG</a>
@@ -1335,6 +1336,57 @@
                                 </div>
                             </div>
                             <!--====== End - Add to Cart Modal ======-->
+                                    <!--====== Newsletter Subscribe Modal: Đoạn mã HTML này tạo ra một cửa sổ modal, thường được sử dụng để hiển thị nội dung không gian động trên trang web hiện tại mà không cần chuyển hướng hoặc tải lại trang.
+                        Trong trường hợp này, cửa sổ modal được sử dụng để hiển thị một biểu mẫu đăng ký nhận thông báo mới.    ======-->
+                        <div class="modal fade new-l" id="newsletter-modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content modal--shadow">
+            
+                                    <!--Lớp fas fa-times là một lớp của Font Awesome, một thư viện biểu tượng, và nó hiển thị một biểu tượng “x”. Thuộc tính data-dismiss="modal" được sử dụng để chỉ định rằng khi nút này được nhấp,
+                                                cửa sổ modal sẽ được đóng.-->
+                                    <button class="btn new-l__dismiss fas fa-times" type="button" data-dismiss="modal"></button>
+                                    <div class="modal-body">
+                                        <div class="row u-s-m-x-0">
+                                            <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
+            
+                                                <a class="new-l__img-wrap u-d-block" href="shop-grid-left.html">
+            
+                                                    <img class="u-img-fluid u-d-block" src="images/newsletter/newsletter.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 new-l__col-2">
+                                                <div class="new-l__section u-s-m-t-30">
+                                                    <div class="u-s-m-b-8 new-l--center">
+                                                        <h3 class="new-l__h3">Nhận thông báo mới</h3>
+                                                    </div>
+                                                    <div class="u-s-m-b-30 new-l--center">
+                                                        <p class="new-l__p1"> Đăng ký email để nhận thông tin về hàng mới, chương trình giảm giá đặc biệt</p>
+                                                    </div>
+                                                    <form class="new-l__form">
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <input class="news-l__input" type="text" placeholder="Địa chỉ email của bạn">
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <button class="btn btn--e-brand-b-2" type="submit">Đăng ký!</button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="u-s-m-b-15 new-l--center">
+                                                        <p class="new-l__p2">Bằng cách đăng ký, bạn đồng ý nhận các ưu đãi của Chiêu Minh Các Concept, chương trình khuyến mãi và các thông tin mới nhất. Bạn có thể bỏ đăng kí bất cứ lúc nào.</p>
+                                                    </div>
+                                                    <div class="u-s-m-b-15 new-l--center">
+            
+                                                        <a class="new-l__link" data-dismiss="modal">Không, cảm ơn</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====== End - Newsletter Subscribe Modal ======-->
                             <!--====== End - Modal Section ======-->
                         </div>
                     </div>

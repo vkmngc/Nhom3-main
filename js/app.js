@@ -638,29 +638,29 @@
         }
     };
 
-    // Show Newsletter Modal
-    RESHOP.showNewsletterModal = function () {
-        if ($('#newsletter-modal').length) {
-            setTimeout(function () {
-                // Manually opens a modal
-                $('#newsletter-modal').modal({
-                    backdrop: 'static',
-                    keyboard: false,
-                    show: true
-                });
-            }, 5000);
-        }
-    };
+// Show Newsletter Modal
+RESHOP.showNewsletterModal = function() {
+    if ($('#newsletter-modal').length) {
+        setTimeout(function () {
+            // Manually opens a modal
+            $('#newsletter-modal').modal({
+                backdrop: 'static',
+                keyboard: false,
+                show: true
+            });
+        }, 5000);
+    }
+};
 
-    // Check everything including DOM elements and images loaded
-    $(window).on('load', function () {
-        RESHOP.showNewsletterModal();
-        if ($primarySlider.length) {
-            // Play slider when everything is loaded
-            $primarySlider.data('owl.carousel').options.autoplay = true;
-            $primarySlider.trigger('refresh.owl.carousel');
-        }
-    });
+// Check everything including DOM elements and images loaded
+$(window).on('load',function () {
+    RESHOP.showNewsletterModal();
+    if ($primarySlider.length) {
+        // Play slider when everything is loaded
+        $primarySlider.data('owl.carousel').options.autoplay = true;
+        $primarySlider.trigger('refresh.owl.carousel');
+    }
+});
 
 
     RESHOP.initScrollUp();

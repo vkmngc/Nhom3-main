@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Thẻ này cung cấp mô tả về nội dung trang web, thường được sử dụng bởi công cụ tìm kiếm khi hiển thị kết quả tìm kiếm. Trong trường hợp này, không có mô tả nào được cung cấp.-->
-    <meta name="description" content="">
+    <meta name="description" content="Chiêu Minh Các">
 
     <!--Thẻ này xác định tác giả của trang web. Trong trường hợp này, không có tên tác giả nào được cung cấp.-->
-    <meta name="author" content="">
+    <meta name="author" content="Nhóm 3">
 
 
     <!--Thẻ link trong HTML, được sử dụng để liên kết tới một tệp tin khác từ trang HTML hiện tại.-->
@@ -197,7 +197,7 @@
                         <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
                         <!--======Tạo responsive design cho header-->
                         <div class="menu-init" id="navigation1">
-                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button">M</button>
+                            <button class="btn btn--icon toggle-mega-text toggle-button" type="button"><i class="fas fa-sort-down"></i></button>
 
                             <!--====== Menu ======-->
                             <div class="ah-lg-mode">
@@ -851,7 +851,7 @@
                                         <div class="shop-w shop-w--style">
                                             <div class="shop-w__intro-wrap">
                                                 <!--===== Bộ lọc theo Danh Mục =====-->
-                                                <h1 class="shop-w__h">DANH MỤC SẢN PHẨM</h1>
+                                                <h1 class="shop-w__h">SẢN PHẨM</h1>
                                                 <!--Dấu trừ (fa-minus) lấy từ Font Awesome-->
                                                 <!--Khi Click vào dấu trừ, data-target sẽ bị ẩn đi (chức năng collapse)-->
                                                 <span class="fas fa-minus shop-w__toggle" data-target="#s-category" data-toggle="collapse"></span>
@@ -862,9 +862,7 @@
                                                         <!--Display:block => Tạo ra phần tử chiếm toàn bộ chiều ngang-->
                                                         <ul style="display:block">
                                                             <li class="has-list">
-                                                                <!--====== Danh mục Laptop Gaming =====-->
-                                                                <!--href="#" dùng để thể hiện liên kết đến vị trí trong trang hiện tại-->
-                                                                <!--====== Danh mục Nữ =====-->
+                                                                <!--====== Danh mục Nhật Bình =====-->
                                                                 <!--href="#" dùng để thể hiện liên kết đến vị trí trong trang hiện tại-->
                                                                 <a href="#">Nhật Bình</a>
                                                                 <span class="category-list__text u-s-m-l-6"></span>
@@ -987,49 +985,58 @@
                                         <div class="shop-w__wrap collapse show" id="s-color">
                                             <ul class="shop-w__list gl-scroll">
                                                 <li>
-                                                    <div class="check-box">
-                                                        <!--Checkbox để chọn màu hoặc không-->
-                                                        <input type="checkbox" id="mau-do">
-                                                        <div class="check-box__state check-box__state--primary">
+                                                    <div class="color__check">
 
-                                                            <label class="check-box__label" for="mau-do">Màu Đỏ</label></div>
-                                                    </div>
+                                                        <input type="checkbox" id="jet">
+
+                                                        <label class="color__check-label" for="jet" style="background-color: #7A0516"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Đỏ</span>
                                                 </li>
                                                 <li>
-                                                    <div class="check-box">
-                                                        <!--Checkbox để chọn màu hoặc không-->
-                                                        <input type="checkbox" id="mau-vang">
-                                                        <div class="check-box__state check-box__state--primary">
+                                                    <div class="color__check">
 
-                                                            <label class="check-box__label" for="mau-vang">Màu Vàng</label></div>
-                                                    </div>
+                                                        <input type="checkbox" id="folly">
+
+                                                        <label class="color__check-label" for="folly" style="background-color: #ffca3d"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Vàng</span>
                                                 </li>
                                                 <li>
-                                                    <div class="check-box">
-                                                        <!--Checkbox để chọn màu hoặc không-->
-                                                        <input type="checkbox" id="mau-cham">
-                                                        <div class="check-box__state check-box__state--primary">
+                                                    <div class="color__check">
 
-                                                            <label class="check-box__label" for="mau-cham">Màu Chàm</label></div>
-                                                    </div>
+                                                        <input type="checkbox" id="yellow">
+
+                                                        <label class="color__check-label" for="yellow" style="background-color: #0B6E4F"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Xanh lá</span>
                                                 </li>
                                                 <li>
-                                                    <div class="check-box">
-                                                        <!--Checkbox để chọn màu hoặc không-->
-                                                        <input type="checkbox" id="mau-trang">
-                                                        <div class="check-box__state check-box__state--primary">
+                                                    <div class="color__check">
 
-                                                            <label class="check-box__label" for="mau-trang">Màu Trắng</label></div>
-                                                    </div>
+                                                        <input type="checkbox" id="yellow">
+
+                                                        <label class="color__check-label" for="yellow" style="background-color: #006494"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Xanh biển</span>
                                                 </li>
                                                 <li>
-                                                    <div class="check-box">
-                                                        <!--Checkbox để chọn màu hoặc không-->
-                                                        <input type="checkbox" id="mau-hong">
-                                                        <div class="check-box__state check-box__state--primary">
+                                                    <div class="color__check">
 
-                                                            <label class="check-box__label" for="mau-hong">Màu Hồng</label></div>
-                                                    </div>
+                                                        <input type="checkbox" id="granite-gray">
+
+                                                        <label class="color__check-label" for="granite-gray" style="background-color: #e8e7e7"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Trắng</span>
+                                                </li>
+                                                <li>
+                                                    <div class="color__check">
+
+                                                        <input type="checkbox" id="space-cadet">
+
+                                                        <label class="color__check-label" for="space-cadet" style="background-color: #FF4500"></label></div>
+
+                                                    <span class="shop-w__total-text-2">Cam</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1267,7 +1274,7 @@
 
                                         <a class="gl-tag btn--e-brand-shadow" href="#">Nhật Bình</a>
 
-                                        <a class="gl-tag btn--e-brand-shadow" href="#">Ngũ thân tay chẽn</a>
+                                        <a class="gl-tag btn--e-brand-shadow" href="#">Bộ giáp</a>
 
                                         <a class="gl-tag btn--e-brand-shadow" href="#">Áo Tấc</a></div>
                                 </div>
@@ -1354,9 +1361,9 @@
                                                     <span class="product-m__review">(5)</span>
                                                     <!--số lượng người đánh giá-->
                                                 </div>
-                                                <div class="product-m__price">4.672.000₫
+                                                <div class="product-m__price">3.237.000₫
 
-                                                    <span class="product-m__discount">5.980.000₫</span>
+                                                    <span class="product-m__discount">4.980.000₫</span>
 
                                                 </div>
                                                 <!--giá sản phẩm-->
@@ -1418,7 +1425,7 @@
 
                                                     <span class="product-m__review">(23)</span>
                                                 </div>
-                                                <div class="product-m__price">4.200.000₫</div>
+                                                <div class="product-m__price">4.940.000₫</div>
                                                 <div class="product-m__hover">
                                                     <div class="product-m__preview-description">
                                                         <span>
@@ -1530,7 +1537,7 @@
 
                                                     <span class="product-m__review">(32)</span>
                                                 </div>
-                                                <div class="product-m__price">3.500.000₫</div>
+                                                <div class="product-m__price">4.043.000₫</div>
                                                 <div class="product-m__hover">
                                                     <div class="product-m__preview-description">
 
@@ -1589,8 +1596,8 @@
 
                                                     <span class="product-m__review">(0)</span>
                                                 </div>
-                                                <div class="product-m__price">2.700.000₫
-                                                    <span class="product-m__discount">3.300.000₫</span>
+                                                <div class="product-m__price">2.975.000₫
+                                                    <span class="product-m__discount">3.500.000₫</span>
 
                                                 </div>
                                                 <div class="product-m__hover">
@@ -1642,14 +1649,14 @@
                                                 </div>
                                                 <div class="product-m__name">
 
-                                                    <a href="product-detail.html">Combo Nữ gồm Giao lĩnh + Đối khâm tứ thân khoác ngoài</a>
+                                                    <a href="product-detail.html">Combo Giao lĩnh + Tứ thân</a>
                                                 </div>
                                                 <div class="product-m__rating gl-rating-style">
                                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
 
                                                     <span class="product-m__review">(36)</span>
                                                 </div>
-                                                <div class="product-m__price">6.300.000₫</div>
+                                                <div class="product-m__price">7.760.000₫</div>
                                                 <div class="product-m__hover">
                                                     <div class="product-m__preview-description">
 
@@ -1672,6 +1679,7 @@
                                                 <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
                                                     <img class="aspect__img" id="nu7" src="images/product/Phụ kiện/Ngà bài.jpg" alt="" onmousemove="overimg7()" onmouseout="outimg7()">
+                                                    <div class="sale-badge">Sale!</div>
                                                 </a>
                                                 <script>
                                                     function overimg7() {
@@ -1706,7 +1714,9 @@
 
                                                     <span class="product-m__review">(76)</span>
                                                 </div>
-                                                <div class="product-m__price">109.000₫</div>
+                                                <div class="product-m__price">250.000₫
+                                                <span class="product-m__discount">300.000₫</span>
+                                            </div>
                                                 <div class="product-m__hover">
                                                     <div class="product-m__preview-description">
 
@@ -1731,7 +1741,6 @@
                                                 <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
 
                                                     <img class="aspect__img" id="nu8" src="images/product/Nữ/Thầy bùa.jpg" alt="" onmousemove="overimg8()" onmouseout="outimg8()">
-                                                    <div class="sale-badge">Sale!</div>
                                                 </a>
                                                 <script>
                                                     function overimg8() {
@@ -1767,9 +1776,7 @@
                                                     <span class="product-m__review">(23)</span>
                                                 </div>
                                                 <div class="product-m__price">
-                                                    6.900.000₫
-
-                                                    <span class="product-m__discount">5.980.000₫</span>
+                                                    5.763.000₫
                                                 </div>
                                                 <div class="product-m__hover">
                                                     <div class="product-m__preview-description">
@@ -1830,7 +1837,7 @@
                                                     <span class="product-m__review">(50)</span>
                                                 </div>
                                                 <div class="product-m__price">
-                                                    250.000₫
+                                                    240.000₫
 
                                                     <span class="product-m__discount">300.000₫</span>
                                                 </div>
@@ -1892,7 +1899,7 @@
                                                     <span class="product-m__review">(123)</span>
                                                 </div>
                                                 <div class="product-m__price">
-                                                    250.000₫
+                                                    240.000₫
                                                     <span class="product-m__discount">300.000₫</span>
                                                 </div>
                                                 <div class="product-m__hover">
@@ -2280,19 +2287,19 @@
                                             <div id="js-product-detail-modal">
                                                 <div>
 
-                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                                 </div>
 
                                             </div>
@@ -2301,19 +2308,19 @@
                                             <div id="js-product-detail-modal-thumbnail">
                                                 <div>
 
-                                                    <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/53W2" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 3.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/zjHX" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 5.jpg" alt="">
                                                 </div>
                                                 <div>
-
-                                                    <img class="u-img-fluid" src="https://s.net.vn/NJ8n" alt="">
+        
+                                                    <img class="u-img-fluid" src="images/product/Phụ kiện/Kim Khánh 4.jpg" alt="">
                                                 </div>
 
                                             </div>
@@ -2477,7 +2484,7 @@
                                     </div>
                                     <div class="success__img-wrap">
 
-                                        <img class="u-img-fluid" src="https://s.net.vn/UyMB" alt="">
+                                        <img class="u-img-fluid" src="images/product/Phụ kiện/Kim khánh 1.jpg" alt="">
                                     </div>
                                     <div class="success__info-wrap">
 
@@ -2511,6 +2518,57 @@
             </div>
         </div>
         <!--====== End - Add to Cart Modal ======-->
+                <!--====== Newsletter Subscribe Modal: Đoạn mã HTML này tạo ra một cửa sổ modal, thường được sử dụng để hiển thị nội dung không gian động trên trang web hiện tại mà không cần chuyển hướng hoặc tải lại trang.
+                        Trong trường hợp này, cửa sổ modal được sử dụng để hiển thị một biểu mẫu đăng ký nhận thông báo mới.    ======-->
+                        <div class="modal fade new-l" id="newsletter-modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content modal--shadow">
+            
+                                    <!--Lớp fas fa-times là một lớp của Font Awesome, một thư viện biểu tượng, và nó hiển thị một biểu tượng “x”. Thuộc tính data-dismiss="modal" được sử dụng để chỉ định rằng khi nút này được nhấp,
+                                                cửa sổ modal sẽ được đóng.-->
+                                    <button class="btn new-l__dismiss fas fa-times" type="button" data-dismiss="modal"></button>
+                                    <div class="modal-body">
+                                        <div class="row u-s-m-x-0">
+                                            <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
+            
+                                                <a class="new-l__img-wrap u-d-block" href="shop-grid-left.html">
+            
+                                                    <img class="u-img-fluid u-d-block" src="images/newsletter/newsletter.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 new-l__col-2">
+                                                <div class="new-l__section u-s-m-t-30">
+                                                    <div class="u-s-m-b-8 new-l--center">
+                                                        <h3 class="new-l__h3">Nhận thông báo mới</h3>
+                                                    </div>
+                                                    <div class="u-s-m-b-30 new-l--center">
+                                                        <p class="new-l__p1"> Đăng ký email để nhận thông tin về hàng mới, chương trình giảm giá đặc biệt</p>
+                                                    </div>
+                                                    <form class="new-l__form">
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <input class="news-l__input" type="text" placeholder="Địa chỉ email của bạn">
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+            
+                                                            <button class="btn btn--e-brand-b-2" type="submit">Đăng ký!</button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="u-s-m-b-15 new-l--center">
+                                                        <p class="new-l__p2">Bằng cách đăng ký, bạn đồng ý nhận các ưu đãi của Chiêu Minh Các Concept, chương trình khuyến mãi và các thông tin mới nhất. Bạn có thể bỏ đăng kí bất cứ lúc nào.</p>
+                                                    </div>
+                                                    <div class="u-s-m-b-15 new-l--center">
+            
+                                                        <a class="new-l__link" data-dismiss="modal">Không, cảm ơn</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--====== End - Newsletter Subscribe Modal ======-->
         <!--====== End - Modal Section ======-->
         </div>
         <!--====== End - Main App ======-->
