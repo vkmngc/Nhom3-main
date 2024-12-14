@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="css/app.css">
 
 
-
 </head>
 <!-- áp dụng các quy tắc định dạng css của class "config" cho body-->
 
@@ -671,120 +670,6 @@
                                     <li>
                                         <a href="dash-my-wishlist.html"><i class="far fa-heart"></i></a>
                                     </li>
-
-                                    <!--Biểu tưởng giỏ hàng-->
-                                    <li class="has-dropdown">
-                                        <a class="mini-cart-shop-link">
-                                            <i class="fas fa-shopping-bag"></i>
-                                            <span class="total-item-round">3</span>
-                                        </a>
-
-                                        <!--====== Dropdown ======-->
-                                        <span class="js-menu-toggle"></span>
-                                        <div class="mini-cart">
-
-                                            <!--====== Mini Product Container ======-->
-                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
-
-                                                <!--====== Card for mini cart: Sản phẩm đầu tiên trong giỏ hàng ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-                                                            <a class="mini-product__link" href="product-detail.html">
-                                                                <img class="u-img-fluid" src="images/product/Nữ/1. Nhật Bình Vàng.jpg" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-                                                            <span class="mini-product__category">
-                                                                <a href="shop-grid-left.html ">Nhật Bình</a>
-                                                            </span>
-                                                            <span class="mini-product__name">
-                                                                <a href="product-detail.html">Nhật Bình Hoàng Hậu</a>
-                                                            </span>
-                                                            <span class="mini-product__quantity">1 x</span>
-                                                            <span class="mini-product__price">7.800.000đ</span>
-                                                        </div>
-                                                    </div>
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                                <!--====== Card for mini cart: Sản phẩm thứ hai trong giỏ hàng ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-
-                                                        <div class="mini-product__image-wrapper">
-                                                            <a class="mini-product__link" href="product-detail.html">
-                                                                <img class="u-img-fluid" src="images/product/Nữ/Ngũ thân tay chẽn trắng.jpg" alt="">
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-                                                                <a href="shop-grid-left.html">Áo tấc</a>
-                                                            </span>
-
-                                                            <span class="mini-product__name">
-                                                                <a href="product-detail.html">Áo tấc Nữ trắng</a>
-                                                            </span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">2.800.000đ</span>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--Xóa sản phẩm ra khỏi giỏ hàng-->
-                                                <script>
-                                                    // Đợi tất cả các phần tử HTML được tải xong
-                                                    document.addEventListener("DOMContentLoaded", function() {
-                                                        // Lấy tất cả các biểu tượng trash
-                                                        var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
-
-                                                        // Gán sự kiện click cho mỗi biểu tượng trash
-                                                        deleteButtons.forEach(function(button) {
-                                                            button.addEventListener('click', function() {
-                                                                // Lấy phần tử cha của biểu tượng trash (card-mini-product)
-                                                                var cardElement = button.closest('.card-mini-product');
-
-                                                                // Xóa phần tử cha (card-mini-product)
-                                                                cardElement.remove();
-                                                            });
-                                                        });
-                                                    });
-                                                </script>
-                                                <!--====== Kết thúc giỏ hàng mini  ======-->
-                                            </div>
-                                            <!--====== End - Mini Product Container ======-->
-
-                                            <!--====== Mini Product Statistics: Thống kê giỏ hàng mini ======-->
-                                            <div class="mini-product-stat">
-
-                                                <div class="mini-total">
-
-                                                    <span class="subtotal-text">TỔNG GIỎ HÀNG</span>
-                                                    <span class="subtotal-value">10.600.000đ</span>
-                                                </div>
-                                                <div class="mini-action">
-
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM GIỎ HÀNG</a>
-
-                                                </div>
-                                            </div>
-                                            <!--====== End - Mini Product Statistics ======-->
-                                        </div>
-                                        <!--====== End - Dropdown ======-->
-                                    </li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -800,7 +685,6 @@
         <!--====== End - Main Header ======-->
         <!--====== App Content ======-->
         <div class="app-content">
-
             <!--====== Section 1 ======-->
             <div class="u-s-p-y-60">
 
@@ -849,8 +733,8 @@
                                 <div class="table-responsive">
                                     <table class="table-p">
                                         <tbody>
-
                                             <!--====== Tạo bảng sản phẩm thêm vào giỏ hàng. Gồm 3 sản phẩm tương ứng với 3 dòng  ======-->
+                                            <!--====== Row 1 ======-->
                                             <tr>
                                                 <td>
                                                     <div class="table-p__box">
@@ -880,12 +764,9 @@
 
                                                         <!--====== Đếm sản phẩm đầu vào ======-->
                                                         <div class="input-counter">
-
-                                                            <span class="input-counter__minus fas fa-minus"></span>
-
-                                                            <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
-
-                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                            <a class="input-counter__minus  fas fa-minus"></a>
+                                                            <span class="input-counter__text input-counter--text-primary-style">1</span>
+                                                            <a class="input-counter__plus fas fa-plus"></a>
                                                         </div>
                                                         <!--====== Kết thúc đếm đầu vào ======-->
                                                     </div>
@@ -925,22 +806,15 @@
                                                     </div>
                                                 </td>
                                                 <td>
-
-                                                    <span class="table-p__price">650.000₫</span>
+                                                    <span class="table-p__price">650.000đ</span> 
                                                 </td>
                                                 <td>
                                                     <div class="table-p__input-counter-wrap">
-
-                                                        <!--====== Input Counter ======-->
                                                         <div class="input-counter">
-
-                                                            <span class="input-counter__minus fas fa-minus"></span>
-
-                                                            <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
-
-                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                            <a class="input-counter__minus quantity-decrement fas fa-minus"></a>
+                                                            <span class="input-counter__text input-counter--text-primary-style">1</span>
+                                                            <a class="input-counter__plus quantity-increment fas fa-plus"></a>
                                                         </div>
-                                                        <!--====== End - Input Counter ======-->
                                                     </div>
                                                 </td>
                                                 <td>
@@ -951,32 +825,7 @@
                                                 </td>
                                             </tr>
                                             <!--====== End - Row ======-->
-                                            <!--====== Row ======-->
-                                            <!--Xóa sản phẩm ra khỏi giỏ hàng-->
-                                            <script>
-                                                //: Được kích hoạt khi DOM (Document Object Model) của trang web đã được tải hoàn toàn.
-                                                //Đảm bảo tất cả các phần tử HTML đã được tải xong trước khi chúng ta thực hiện bất kỳ thao tác nào.
-                                                document.addEventListener('DOMContentLoaded', function() {
-                                                    // Get all delete links: Chọn tất cả các liên kết xóa trong bảng
-                                                    var deleteLinks = document.querySelectorAll('.table-p__delete-link');
-
-                                                    // Add click event listener to each delete link: Thêm sự kiện click cho mỗi liên kết xóa
-                                                    deleteLinks.forEach(function(link) {
-                                                        link.addEventListener('click', function(event) { //Khi một liên kết xóa được nhấp
-                                                            event.preventDefault(); // Ngăn chặn trình duyệt chuyển hướng đến địa chỉ được xác định trong thuộc tính href của liên kết.
-
-                                                            // Find the closest 'tr' element and hide it: Tìm và ẩn dòng chứa liên kết đó
-                                                            //Sử dụng phương thức closest để tìm phần tử cha gần nhất với thẻ 'tr' (hàng trong bảng) của liên kết.
-                                                            //Nếu hàng đó tồn tại, đặt thuộc tính display của nó thành 'none', làm cho nó ẩn đi trên trang.
-                                                            var productRow = link.closest('tr');
-                                                            if (productRow) {
-                                                                productRow.style.display = 'none';
-                                                            }
-                                                        });
-                                                    });
-                                                });
-                                            </script>
-                                            <!-- Kết thúc JS xóa sản phẩm ra khỏi giỏ hàng-->
+                                            <!--====== Row 3 ======-->
                                             <tr>
                                                 <td>
                                                     <div class="table-p__box">
@@ -997,28 +846,21 @@
                                                             </span>
                                                             <ul class="table-p__variant-list">
                                                                 <li>
-
-
-
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-
-                                                    <span class="table-p__price">2.800.000đ</span>
+                                                <span class="table-p__price">2.800.000đ</span>
                                                 </td>
                                                 <td>
                                                     <div class="table-p__input-counter-wrap">
 
                                                         <!--====== Đếm đầu vào sản phẩm ======-->
                                                         <div class="input-counter">
-
-                                                            <span class="input-counter__minus fas fa-minus"></span>
-
-                                                            <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
-
-                                                            <span class="input-counter__plus fas fa-plus"></span>
+                                                            <a class="input-counter__minus fas fa-minus"></a>
+                                                            <span class="input-counter__text input-counter--text-primary-style">1</span>
+                                                            <a class="input-counter__plus fas fa-plus"></a>
                                                         </div>
                                                         <!--====== Kết thúc đếm đầu vào sản phẩm ======-->
                                                     </div>
@@ -1125,25 +967,22 @@
                                                 <table class="f-cart__table">
                                                     <tbody>
                                                         <tr>
-                                                            <td>VẬN CHUYỂN </td>
-                                                            <td>30.000đ</td>
-                                                        </tr>
-                                                        <tr>
+                                                            <td>VẬN CHUYỂN</td>
+                                                            <td class="shipping-fee">30.000đ</td>
                                                         </tr>
                                                         <tr>
                                                             <td>TỔNG TIỀN HÀNG</td>
-                                                            <td>11.250.000đ</td>
+                                                            <td class="total-cart-value">11.250.000đ</td>
                                                         </tr>
                                                         <tr>
                                                             <td>TỔNG CỘNG</td>
-                                                            <td>11.280.000đ</td>
+                                                            <td class="total-order-value">11.280.000đ</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                             <div>
-
-                                                <a class="btn btn--e-brand-b-2" href="checkout.html" style="margin-left: 50px;margin-right: 50px;"> TIẾN HÀNH THANH TOÁN</a>
+                                                <a class="btn btn--e-brand-b-2" href="checkout.html" style="margin-left: 50px; margin-right: 20px;">TIẾN HÀNH THANH TOÁN</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1835,6 +1674,72 @@
         </div>
     </footer>
     <!--====== End - Main Footer ======-->
+    <!--====== JS CHO PHẦN TÍNH TIỀN CỦA TỔNG ĐƠN HÀNG ======-->
+    <script>
+        // Lấy giá trị từ phần HTML và định nghĩa các biến liên quan
+    // Lấy giá trị từ phần HTML và định nghĩa các biến liên quan
+    document.addEventListener("DOMContentLoaded", function () {
+    const shippingFeeElement = document.querySelector(".shipping-fee");
+    const totalCartValueElement = document.querySelector(".total-cart-value");
+    const totalOrderValueElement = document.querySelector(".total-order-value");
+    const shippingFee = parseInt(shippingFeeElement.textContent.replace(/\D/g, ""));
+    // Lấy danh sách tất cả các sản phẩm
+    const productRows = document.querySelectorAll(".table-p__price");
+    function updateTotals() {
+        let totalCartValue = 0;
+        const productElements = document.querySelectorAll(".table-p__price");
+        productElements.forEach((productRow) => {
+            const counterElement = productRow.parentElement.nextElementSibling;
+            const quantityElement = counterElement.querySelector(".input-counter__text");
+            const quantity = parseInt(quantityElement.textContent);
+            const productPrice = parseInt(productRow.textContent.replace(/\D/g, ""));
+            totalCartValue += productPrice * quantity;
+        });
+        if (productElements.length === 0) {
+            shippingFeeElement.textContent = "0đ";
+            totalCartValueElement.textContent = "0đ";
+            totalOrderValueElement.textContent = "0đ";
+        } else {
+            totalCartValueElement.textContent = totalCartValue.toLocaleString("vi-VN") + "đ";
+            totalOrderValueElement.textContent = (totalCartValue + shippingFee).toLocaleString("vi-VN") + "đ";
+        }
+    }
+    productRows.forEach((productRow) => {
+        const priceElement = productRow;
+        const counterElement = priceElement.parentElement.nextElementSibling;
+        const quantityElement = counterElement.querySelector(".input-counter__text");
+        const minusButton = counterElement.querySelector(".input-counter__minus");
+        const plusButton = counterElement.querySelector(".input-counter__plus");
+        minusButton.addEventListener("click", () => {
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity > 1) {
+                quantity--;
+                quantityElement.textContent = quantity;
+                updateTotals();
+            }
+        });
+        plusButton.addEventListener("click", () => {
+            let quantity = parseInt(quantityElement.textContent);
+            quantity++;
+            quantityElement.textContent = quantity;
+            updateTotals();
+        });
+    });
+    // Xử lý xóa sản phẩm
+    const deleteLinks = document.querySelectorAll(".table-p__delete-link");
+    deleteLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const productRow = link.closest("tr");
+            if (productRow) {
+                productRow.remove();
+                updateTotals();
+            }
+        });
+    });
+    updateTotals();
+    });
+    </script>
     <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
     <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
     <script>

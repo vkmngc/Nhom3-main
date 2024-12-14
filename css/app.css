@@ -1397,28 +1397,35 @@
  /* Input-Counter Component */
  
  .input-counter {
-     position: relative;
-     /* relative: định vị một phần tử tương đối so với vị trí ban đầu của nó mà không làm thay đổi layout của các phần tử khác, phần tử này sẽ chuyển động theo các thuộc tính định vị là top, right, bottom, và left nhưng không gây ảnh hưởng đến việc bố trí các phần tử xung quanh */
-     display: inline-block;
-     max-width: 132px;
-     min-width: 132px;
- }
- 
- .input-counter__text {
-     border-radius: 25px;
-     display: block;
-     width: 100%;
-     height: 50px;
-     font-size: 14px;
-     font-weight: 600;
-     text-align: center;
- }
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    position: relative; /* Bỏ đi sự tuyệt đối của các phần tử bên trong */
+    background-color: #f1f1f1;
+    max-width: 132px;
+    min-width: 132px;
+    height: 50px; /* Điều chỉnh chiều cao phù hợp */
+    border-radius: 25px; /* Bo tròn khung */
+    overflow: hidden; /* Đảm bảo phần tử không bị tràn */
+}
+
+.input-counter__text {
+    flex: 1; /* Để chiếm khoảng trống giữa các nút */
+    text-align: center; 
+    color: #7A0516;
+    font-size: 14px;
+    font-weight: 600;
+    border: none; /* Xóa đường viền nếu có */
+    background-color: transparent; /* Nền trong suốt */
+    line-height: 50px; /* Căn chữ nằm giữa theo chiều dọc */
+}
  
  .input-counter__text:focus {
      outline: 0;
  }
  
  .input-counter--text-primary-style {
+    text-align: center;   
      color: #7A0516;
      transition: all 0.6s linear;
      border: 2px solid transparent;
@@ -1432,18 +1439,19 @@
  
  .input-counter__minus,
  .input-counter__plus {
-     top: 0;
-     display: inline-block;
-     font-size: 10px;
+     display: flex; /* Sử dụng Flexbox cho nút */
+     align-items: center; 
+     justify-content: center; 
+     width: 50px; /* Chiều rộng nút */
+     height: 100%; /* Chiều cao nút bằng chiều cao khung */
+     font-size: 16px; /* Điều chỉnh kích thước biểu tượng */
      cursor: pointer;
-     position: absolute;
-     width: 50px;
-     line-height: 50px;
-     height: 100%;
-     text-align: center;
+     background-color: transparent;
      color: #000000;
      transition: color 0.5s;
  }
+
+ 
  
  .input-counter__minus:hover,
  .input-counter__plus:hover {

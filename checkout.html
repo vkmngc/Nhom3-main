@@ -671,120 +671,6 @@
                                     <li>
                                         <a href="dash-my-wishlist.html"><i class="far fa-heart"></i></a>
                                     </li>
-
-                                    <!--Biểu tưởng giỏ hàng-->
-                                    <li class="has-dropdown">
-                                        <a class="mini-cart-shop-link">
-                                            <i class="fas fa-shopping-bag"></i>
-                                            <span class="total-item-round">3</span>
-                                        </a>
-
-                                        <!--====== Dropdown ======-->
-                                        <span class="js-menu-toggle"></span>
-                                        <div class="mini-cart">
-
-                                            <!--====== Mini Product Container ======-->
-                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
-
-                                                <!--====== Card for mini cart: Sản phẩm đầu tiên trong giỏ hàng ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-                                                        <div class="mini-product__image-wrapper">
-                                                            <a class="mini-product__link" href="product-detail.html">
-                                                                <img class="u-img-fluid" src="images/product/Nữ/1. Nhật Bình Vàng.jpg" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="mini-product__info-wrapper">
-                                                            <span class="mini-product__category">
-                                                                <a href="shop-grid-left.html ">Nhật Bình</a>
-                                                            </span>
-                                                            <span class="mini-product__name">
-                                                                <a href="product-detail.html">Nhật Bình Hoàng Hậu</a>
-                                                            </span>
-                                                            <span class="mini-product__quantity">1 x</span>
-                                                            <span class="mini-product__price">7.800.000đ</span>
-                                                        </div>
-                                                    </div>
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-                                                <!--====== Card for mini cart: Sản phẩm thứ hai trong giỏ hàng ======-->
-                                                <div class="card-mini-product">
-                                                    <div class="mini-product">
-
-                                                        <div class="mini-product__image-wrapper">
-                                                            <a class="mini-product__link" href="product-detail.html">
-                                                                <img class="u-img-fluid" src="images/product/Nữ/Ngũ thân tay chẽn trắng.jpg" alt="">
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="mini-product__info-wrapper">
-
-                                                            <span class="mini-product__category">
-                                                                <a href="shop-grid-left.html">Áo tấc</a>
-                                                            </span>
-
-                                                            <span class="mini-product__name">
-                                                                <a href="product-detail.html">Áo tấc Nữ trắng</a>
-                                                            </span>
-
-                                                            <span class="mini-product__quantity">1 x</span>
-
-                                                            <span class="mini-product__price">2.800.000đ</span>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
-
-                                                </div>
-                                                <!--====== End - Card for mini cart ======-->
-
-
-                                                <!--Xóa sản phẩm ra khỏi giỏ hàng-->
-                                                <script>
-                                                    // Đợi tất cả các phần tử HTML được tải xong
-                                                    document.addEventListener("DOMContentLoaded", function() {
-                                                        // Lấy tất cả các biểu tượng trash
-                                                        var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
-
-                                                        // Gán sự kiện click cho mỗi biểu tượng trash
-                                                        deleteButtons.forEach(function(button) {
-                                                            button.addEventListener('click', function() {
-                                                                // Lấy phần tử cha của biểu tượng trash (card-mini-product)
-                                                                var cardElement = button.closest('.card-mini-product');
-
-                                                                // Xóa phần tử cha (card-mini-product)
-                                                                cardElement.remove();
-                                                            });
-                                                        });
-                                                    });
-                                                </script>
-                                                <!--====== Kết thúc giỏ hàng mini  ======-->
-                                            </div>
-                                            <!--====== End - Mini Product Container ======-->
-
-                                            <!--====== Mini Product Statistics: Thống kê giỏ hàng mini ======-->
-                                            <div class="mini-product-stat">
-
-                                                <div class="mini-total">
-
-                                                    <span class="subtotal-text">TỔNG GIỎ HÀNG</span>
-                                                    <span class="subtotal-value">10.600.000đ</span>
-                                                </div>
-                                                <div class="mini-action">
-
-                                                    <a class="mini-link btn--e-brand-b-2" href="checkout.html">TIẾN HÀNH THANH TOÁN</a>
-                                                    <a class="mini-link btn--e-transparent-secondary-b-2" href="cart.html">XEM GIỎ HÀNG</a>
-
-                                                </div>
-                                            </div>
-                                            <!--====== End - Mini Product Statistics ======-->
-                                        </div>
-                                        <!--====== End - Dropdown ======-->
-                                    </li>
                                 </ul>
                                 <!--====== End - List ======-->
                             </div>
@@ -1142,29 +1028,8 @@
                                                         <a class="o-card__del far fa-trash-alt"></a>
                                                         <!--biểu tượng trash-->
                                                     </div>
-
                                                 </div>
-
                                             </div>
-                                            <!--Xóa sản phẩm ra khỏi giỏ hàng-->
-                                            <script>
-                                                // Đợi tất cả các phần tử HTML được tải xong
-                                                document.addEventListener("DOMContentLoaded", function() {
-                                                    // Lấy tất cả các biểu tượng trash
-                                                    var deleteButtons = document.querySelectorAll('.o-card__del');
-
-                                                    // Gán sự kiện click cho mỗi biểu tượng trash
-                                                    deleteButtons.forEach(function(button) {
-                                                        button.addEventListener('click', function() {
-                                                            // Lấy phần tử cha của biểu tượng trash (o-card)
-                                                            var cardElement = button.closest('.o-card');
-
-                                                            // Xóa phần tử cha (o-card), tức là xóa sản phẩm tương ứng
-                                                            cardElement.remove();
-                                                        });
-                                                    });
-                                                });
-                                            </script>
                                             <!--====== Mã giảm giá có sẵn ======-->
                                             <div class="o-summary__section u-s-m-b-30">
                                                 <div class="o-summary__box">
@@ -1981,70 +1846,90 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     var quantityControls = document.querySelectorAll('.quantity-controls');
-                    var totalCartValue = 0; // Thêm biến này để theo dõi tổng giá trị giỏ hàng
-                    var totalOrderValue = 0; // Thêm biến này để theo dõi tổng giá trị đơn hàng
-
+                    var deleteButtons = document.querySelectorAll('.o-card__del');
+                    var totalCartValue = 0;
+                    var totalOrderValue = 0;
+                
                     quantityControls.forEach(function(controls) {
                         var decrementBtn = controls.querySelector('.quantity-decrement');
                         var quantityDisplay = controls.querySelector('.o-card__quantity');
                         var incrementBtn = controls.querySelector('.quantity-increment');
-
+                
                         decrementBtn.addEventListener('click', function() {
                             updateQuantity(quantityDisplay, -1);
                         });
-
+                
                         incrementBtn.addEventListener('click', function() {
                             updateQuantity(quantityDisplay, 1);
                         });
                     });
-
+                
+                    deleteButtons.forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            var cardElement = button.closest('.o-card');
+                            cardElement.remove();
+                            updateCartTotal();
+                        });
+                    });
+                
+                    document.getElementById('option1').addEventListener('change', updateCartTotal);
+                    document.getElementById('option2').addEventListener('change', updateCartTotal);
+                
                     function updateQuantity(display, increment) {
                         var currentValue = parseInt(display.textContent);
                         var newValue = currentValue + increment;
-
+                
                         if (newValue < 1) {
                             newValue = 1;
                         }
-
+                
                         display.textContent = newValue;
-
-                        // Gọi hàm cập nhật tổng giỏ hàng
                         updateCartTotal();
                     }
-
+                
                     function updateCartTotal() {
                         var totalValue = document.querySelector('.o-summary__table tr:nth-child(2) td:last-child');
-                        var shippingFee = document.querySelector('.o-summary__table tr:first-child td:last-child').textContent;
-
-                        // Cập nhật giá trị tổng giỏ hàng
+                        var totalValueEnd = document.querySelector('.o-summary__table tr:nth-child(3) td:last-child');
+                        var shippingFeeElem = document.querySelector('.o-summary__table tr:first-child td:last-child');
+                        var shippingFee = parseFloat(shippingFeeElem.textContent.replace(/\D/g, '')) || 0;
+                
                         totalCartValue = 0;
-                        quantityControls.forEach(function(controls) {
-                            var productPrice = controls.parentElement.querySelector('.o-card__price').textContent;
-                            var productQuantity = parseInt(controls.querySelector('.o-card__quantity').textContent);
-
+                        var products = document.querySelectorAll('.o-card');
+                
+                        products.forEach(function(product) {
+                            var productPrice = product.querySelector('.o-card__price').textContent;
+                            var productQuantity = parseInt(product.querySelector('.o-card__quantity').textContent);
                             totalCartValue += (parseFloat(productPrice.replace(/\D/g, '')) * productQuantity);
                         });
-
-                        // Cập nhật giá trị tổng cộng
-                        totalOrderValue = totalCartValue + parseFloat(shippingFee.replace(/\D/g, ''));
-
-                        // Kiểm tra giá trị các biến bằng cách sử dụng console.log
-                        console.log('totalCartValue:', totalCartValue);
-                        console.log('shippingFee:', shippingFee);
-                        console.log('totalOrderValue:', totalOrderValue);
-
-                        // Cập nhật giá trị tổng cộng vào HTML
-                        totalValue.textContent = formatCurrency(totalOrderValue);
+                
+                        if (products.length === 0) {
+                            shippingFee = 0;
+                            shippingFeeElem.textContent = formatCurrency(shippingFee);
+                        }
+                
+                        if (document.getElementById('option1').checked) {
+                            totalCartValue -= 15000;
+                        }
+                        if (document.getElementById('option2').checked) {
+                            totalCartValue *= 0.92;
+                        }
+                
+                        totalCartValue = Math.max(totalCartValue, 0);
+                        totalOrderValue = totalCartValue + shippingFee;
+                
+                        totalValue.textContent = formatCurrency(totalCartValue);
+                        totalValueEnd.textContent = formatCurrency(totalOrderValue);
                     }
-
+                
                     function formatCurrency(amount) {
-                        return amount.toLocaleString('en-US', {
+                        return amount.toLocaleString('vi-VN', {
                             style: 'currency',
                             currency: 'VND'
                         });
                     }
                 });
             </script>
+                
 
             <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
             <script>

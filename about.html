@@ -676,7 +676,7 @@
                                     <li class="has-dropdown">
                                         <a class="mini-cart-shop-link">
                                             <i class="fas fa-shopping-bag"></i>
-                                            <span class="total-item-round">3</span>
+                                            <span class="total-item-round">2</span>
                                         </a>
 
                                         <!--====== Dropdown ======-->
@@ -742,24 +742,55 @@
                                                 </div>
                                                 <!--====== End - Card for mini cart ======-->
 
-
                                                 <!--Xóa sản phẩm ra khỏi giỏ hàng-->
                                                 <script>
-                                                    // Đợi tất cả các phần tử HTML được tải xong
                                                     document.addEventListener("DOMContentLoaded", function() {
-                                                        // Lấy tất cả các biểu tượng trash
+                                                        // Lấy tất cả các biểu tượng thùng rác
                                                         var deleteButtons = document.querySelectorAll('.mini-product__delete-link');
-
+                                                        // Lấy tổng giá trị trong giỏ hàng
+                                                        var subtotalValue = document.querySelector('.subtotal-value');
+                                                        // Lấy phần tử hiển thị số lượng sản phẩm
+                                                        var totalItemRound = document.querySelector('.total-item-round');
+                                                        // Tính tổng giá trị giỏ hàng
+                                                        function updateSubtotal() {
+                                                            let totalCartValue = 0;
+                                                            const productElements = document.querySelectorAll(".mini-product__price");
+                                                            productElements.forEach((productRow) => {
+                                                                // Lấy giá trị của mỗi sản phẩm và chuyển sang dạng số
+                                                                const productPrice = parseInt(productRow.textContent.replace(/\D/g, ""));
+                                                                totalCartValue += productPrice;
+                                                            });
+                                                            // Cập nhật giá trị tổng giỏ hàng
+                                                            if (productElements.length === 0) {
+                                                                subtotalValue.textContent = "0đ";
+                                                            } else {
+                                                                subtotalValue.textContent = totalCartValue.toLocaleString("vi-VN") + "đ";
+                                                            }
+                                                            // Cập nhật số lượng sản phẩm trong giỏ hàng
+                                                            updateTotalItems();
+                                                        }
+                                                        // Cập nhật số lượng sản phẩm trong giỏ hàng
+                                                        function updateTotalItems() {
+                                                            const totalItems = document.querySelectorAll('.card-mini-product').length;
+                                                            if (totalItems === 0) {
+                                                                totalItemRound.textContent = "0";
+                                                            } else {
+                                                                totalItemRound.textContent = totalItems;
+                                                            }
+                                                        }
                                                         // Gán sự kiện click cho mỗi biểu tượng trash
                                                         deleteButtons.forEach(function(button) {
                                                             button.addEventListener('click', function() {
-                                                                // Lấy phần tử cha của biểu tượng trash (card-mini-product)
+                                                                // Lấy phần tử sản phẩm chứa biểu tượng trash (card-mini-product)
                                                                 var cardElement = button.closest('.card-mini-product');
-
-                                                                // Xóa phần tử cha (card-mini-product)
+                                                                // Xóa phần tử sản phẩm này (card-mini-product)
                                                                 cardElement.remove();
+                                                                // Cập nhật lại subtotal và số lượng sản phẩm sau khi xóa sản phẩm
+                                                                updateSubtotal();
                                                             });
                                                         });
+                                                        // Cập nhật subtotal và số lượng sản phẩm khi tải trang lần đầu
+                                                        updateSubtotal();
                                                     });
                                                 </script>
                                                 <!--====== Kết thúc giỏ hàng mini  ======-->
