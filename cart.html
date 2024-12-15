@@ -1596,7 +1596,6 @@
     <!--End Footer-->
     <!--====== JS CHO PHẦN TÍNH TIỀN CỦA TỔNG ĐƠN HÀNG ======-->
     <script>
-        // Lấy giá trị từ phần HTML và định nghĩa các biến liên quan
     // Lấy giá trị từ phần HTML và định nghĩa các biến liên quan
     document.addEventListener("DOMContentLoaded", function () {
     const shippingFeeElement = document.querySelector(".shipping-fee");
@@ -1605,6 +1604,7 @@
     const shippingFee = parseInt(shippingFeeElement.textContent.replace(/\D/g, ""));
     // Lấy danh sách tất cả các sản phẩm
     const productRows = document.querySelectorAll(".table-p__price");
+    // Hàm update lại giá sản phẩm
     function updateTotals() {
         let totalCartValue = 0;
         const productElements = document.querySelectorAll(".table-p__price");
@@ -1624,6 +1624,7 @@
             totalOrderValueElement.textContent = (totalCartValue + shippingFee).toLocaleString("vi-VN") + "đ";
         }
     }
+    // Thêm bớt số lượng sản phẩm
     productRows.forEach((productRow) => {
         const priceElement = productRow;
         const counterElement = priceElement.parentElement.nextElementSibling;
