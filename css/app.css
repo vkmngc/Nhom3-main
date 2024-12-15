@@ -6895,14 +6895,15 @@
      font-size: 12px;
  }
  
- /*Flash-sale shopee */
+ /*Flash-sale */
  .flash-sale {
     border: 1px solid #7A0516;
     border-radius: 5px;
     background: #ffeef1cb;
     padding: 10px;
-    margin: 20px 0;
+    margin: 10px 0; 
     text-align: left;
+    max-width: 100%; 
 }
 
 .flash-sale-banner {
@@ -6910,50 +6911,52 @@
     justify-content: space-between;
     align-items: center;
     background: #7A0516;
-    padding: 5px 10px;
+    padding: 5px 8px; 
     border-radius: 5px 5px 0 0;
     color: white;
     font-weight: bold;
 }
 
 .flash-sale-title {
-    font-size: 16px;
+    font-size: 14px; 
 }
 
 .flash-sale-timer {
-    font-size: 14px;
+    font-size: 12px; 
 }
 
 .flash-sale-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 5px;
+    gap: 5px; 
 }
 
 .flash-sale-content span {
-    margin-right: 10px; /* Khoảng cách giữa các `span` */
+    margin-right: 8px; 
 }
 
 .flash-sale-content span:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 4px; 
 }
 
 .current-price {
     color: #7A0516;
-    font-size: 2rem;
+    font-size: 1.5rem; 
     font-weight: 700;
 }
 
 .flashsale {
     color: #7A0516;
-    font-size: 14px;
+    font-size: 12px; 
     font-weight: 600;
     transition: color 0.5s;
 }
 
 .old-price {
     color: #a0a0a0;
-    font-size: 12px;
+    font-size: 10px; /* Giảm kích thước chữ */
 }
 
  .pd-detail__rating {
