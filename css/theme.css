@@ -4,7 +4,6 @@
 Project:  CoolAdmin
 Version:	1.0
 Last change:	08/10/2018 [Add Define a table of contents Link]
-Assigned to:	Hau Nguyen
 Primary use:	Open Source
 -------------------------------------------------------------------*/
 
@@ -83,6 +82,11 @@ button,
 input[type='button'] {
     cursor: pointer;
 }
+
+button:hover {
+    transform: translateY(-3px); /* Di chuyển nút lên trên */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  }
 
 button:focus,
 input:focus,

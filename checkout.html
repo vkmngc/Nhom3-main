@@ -131,7 +131,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="admin.html"><i class="far fa-user-circle u-s-m-r-6"></i>
+                                                    <a href="sign-in-admin.html"><i class="far fa-user-circle u-s-m-r-6"></i>
                                                         <span>Admin</span>
                                                     </a>
                                                 </li>
@@ -1848,21 +1848,18 @@
                             shippingFee = 0;
                             shippingFeeElem.textContent = formatCurrency(shippingFee);
                         }
-                
                         if (document.getElementById('option1').checked) {
                             totalCartValue -= 15000;
                         }
                         if (document.getElementById('option2').checked) {
                             totalCartValue *= 0.92;
                         }
-                
                         totalCartValue = Math.max(totalCartValue, 0);
                         totalOrderValue = totalCartValue + shippingFee;
                 
                         totalValue.textContent = formatCurrency(totalCartValue);
                         totalValueEnd.textContent = formatCurrency(totalOrderValue);
                     }
-                
                     function formatCurrency(amount) {
                         return amount.toLocaleString('vi-VN', {
                             style: 'currency',

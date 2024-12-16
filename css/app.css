@@ -863,12 +863,12 @@
  .gl-link {
      font-size: 13px;
      font-weight: 600;
-     color: #7A0516;
+     color: #ffbc03;
      transition: color 0.5s linear;
  }
  
  .gl-link:hover {
-     color: #7A0516;
+     color: black;
  }
  
  .gl-h1 {
@@ -1282,9 +1282,9 @@
  }
  
  .btn--e-brand-shadow {
-     border: 1px solid #7A0516;
+     border: 1px solid #ffca3d;
      box-shadow: 1px 2px 8px 0 rgba(36, 37, 38, 0.08);
-     background-color: #ffffff;
+     background-color: #ffca3d;
      color: #7A0516;
      transition: background-color .3s linear, border-color .3s linear;
  }
