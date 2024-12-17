@@ -2208,6 +2208,9 @@
  .product-bs__container {
      padding: 20px;
  }
+
+
+
  
  .product-bs__wrap {
      position: relative;
@@ -2339,6 +2342,17 @@
      -webkit-transform: translateY(0);
      transform: translateY(0);
  }
+ 
+ @media screen and (max-width: 768px) {
+    .product-bs__list { 
+        display: block; /* Chuyển về dạng block cho từng sản phẩm */
+    }
+
+    .product-bs {
+        width: 100%; /* Sản phẩm chiếm toàn bộ chiều rộng container */
+        margin-bottom: 10px; /* Khoảng cách giữa các sản phẩm */
+    }
+}
  
  .product-short {
      background-color: #fbfbfb;
@@ -3727,6 +3741,26 @@
      background: white;
      border-color: #7A0516;
  }
+
+ @media screen and (max-width: 768px) {
+    .filter__btn--style-2 {
+        display: inline-block; /* Đưa các nút về inline */
+        padding: 10px 15px; /* Giảm padding để các nút nhỏ hơn */
+        font-size: 11px; /* Giảm font-size cho vừa màn hình */
+        margin: 5px 5px; /* Giảm margin giữa các nút */
+    }
+
+    .filter__container { /* Giả sử đây là container của các nút */
+        display: flex;
+        overflow-x: auto; /* Cho phép cuộn ngang */
+        white-space: nowrap; /* Không xuống hàng */
+        padding-bottom: 5px; /* Giữ khoảng cách phía dưới */
+    }
+
+    .filter__container::-webkit-scrollbar {
+        display: none; /* Ẩn scrollbar trên trình duyệt webkit */
+    }
+}
  
  .filter__btn--style-2:hover {
      border-color: #7A0516;
@@ -8790,6 +8824,44 @@
     .ah-list>li>ul>li>ul>li>ul>li>a {
         padding: 8px 72px;
     }
+    .product-bs__name>a{
+        font-size: 14px;
+    }
+    .product-bs__price, .product-bs__discount{
+        font-size: 14px;
+    }
+    .section__heading{
+        font-size: 20px;
+    }
+    .service__info-text-1 {
+        font-size: 12px;
+        padding-top: 8px;
+
+    }
+    .service{
+        padding: 10px;
+
+    }
+    .service-heading{
+        font-size: 22px;
+    }
+
+    #main-search {
+        padding: 0 15px; /* Giảm padding để ô không bị chật */
+        font-size: 12px; /* Giảm kích thước chữ */
+    }
+
+    .main-search-button {
+        right: 8px; /* Dịch nút tìm kiếm gần hơn vào bên phải */
+        font-size: 16px; /* Giảm kích thước nút tìm kiếm */
+        color: black;
+    }
+
+    #main-search::placeholder {
+        font-size: 8px; /* Giảm kích thước placeholder trên mobile */
+        color: white;
+    }
+
 }
  
  
