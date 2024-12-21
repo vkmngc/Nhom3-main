@@ -134,10 +134,11 @@ Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iL
 
 **TÀI LIỆU CHO NHÀ PHÁT TRIỂN**
 
-Xem tại đây: [Link]()
+Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iLi%E1%BB%87uChoNh%C3%A0Ph%C3%A1tTri%E1%BB%83n.md)
 
 **TÀI LIỆU CHO NGƯỜI DÙNG CUỐI**
-Xem tại đây: [Link]()
+
+Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iLi%E1%BB%87uChoNg%C6%B0%E1%BB%9DiD%C3%B9ngCu%E1%BB%91i.md)
 
 **KÊNH TRUYỀN THÔNG**
 
@@ -155,4 +156,4 @@ Fanpage: [Chiêu Minh Các](https://www.facebook.com/ChieuMinhCac)
 
 - Chưa lọc và tìm kiếm sản phẩm được (chỉ có front-end);
 
-- Giao diện chưa tối ưu.
+- Giao diện chưa tối ưu..

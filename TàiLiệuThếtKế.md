@@ -2,51 +2,51 @@
 Tài liệu phân tích thiết kế hệ thống trước khi xây dựng phần mềm
 
 ## Sơ đồ thực thể - quan hệ (ERD)
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/CSDL1.png)
+![erd](images/readme/1.png)
 ## Thiết kế và mô tả mô hình dữ liệu vật lý
 ### 1) CSDL
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/CSDL.png)
+![erd](images/readme/2.png)
 #### Mô tả:
-- CSDL: Cơ Sở Dữ Liệu
+- CSDL: Cơ sở dữ liệu
 
 ### 2) Bảng Loại sản phẩm
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/CT_HoaDon.png)
+![erd](images/readme/3.png)
 #### Mô tả:
 - MaHD: Mã hóa đơn
 - MaHang: Mã Hàng
 - SoLuong:số lượng
 ### 3) Bảng Sản phẩm
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/H%C3%A0ng.png)
+![erd](images/readme/4.png)
 #### Mô tả:
-- MaHang: Mã hàng
-- MaLoai: Mã Loại SP
-- MaThuongHieu: Mã thương hiệu
--TenHang:Tên hàng
--SoLuong:Số lượng
--DonGia: Đơn giá
--HinhAnh: Hình ảnh
--MoTa:Mô tả
--NgayNhap: Ngày nhập
+
 ### 4) Bảng Album Sản phẩm
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Lo%E1%BA%A1i.png)
+![erd](images/readme/5.png)
+#### Mô tả:
 
 ### 5) Bảng Khách hàng
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/6.png)
+#### Mô tả:
 
 ### 6) Bảng Đánh giá
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/7.png)
+#### Mô tả:
 
 ### 7) Bảng Chương trình khuyến mãi
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/8.png)
+#### Mô tả:
 
 ### 8) Bảng Giỏ hàng
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/9.png)
+#### Mô tả:
 
 ### 9) Bảng Chi tiết giỏ hàng
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/10.png)
+#### Mô tả:
 
 ### 10) Bảng Đơn hàng
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/11.png)
+#### Mô tả:
 
 ### 11) Bảng Chi tiết đơn hàng
-![erd](https://github.com/goupbaocao4305/trang-web-ban-hang/blob/Th%C3%A1i-Qu%E1%BB%91c-Anh/H%C3%ACnh/Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u.png)
+![erd](images/readme/12.png)
+#### Mô tả:
