@@ -55,16 +55,6 @@ Ngành công nghệ thông tin (CNTT) trong những năm gần đây đã có nh
 
 Nền tảng hệ thống phần mềm Công nghệ .NET được dùng để xây dựng các ứng dụng Web là ASP.NET, nó cung cấp hai vùng tên khá mạnh và đầy đủ phục vụ cho việc tạo các ứng dụng Web là System.Webvà System.Web.UI. Trong phần này chúng ta sẽ tập trung chủ yếu vào việc dùng ngôn ngữ C# để lập trình với ASP.NET.
 
-Bộ công cụ Web Form cũng được thiết kế để hỗ trợ mô hình phát triển nhanh (RAD). Với Web Form, ta có thể kéo thả các điều khiển trên Form thiết kế cũng như có thể viết mã trực tiếp trong tập tin .aspxhay .aspx.cs. Ứng dụng Web sẽ được triển khai trên máy chủ, còn người dùng sẽ tương tác với ứng dụng thông qua trình duyệt. .NET còn hỗ trợ ta bộ cung cụ để tạo ra các ứng dụng tuân theo mô hình n - lớp (tầng - n tier), giúp ta có thể quản lý được ứng dụng được dễ dàng hơn và nhờ thế nâng cao hiệu suất phát triển phần mềm.
-
-Web Form là bộ công cụ cho phép thực thi các ứng dụng mà các trang Web do nó tạo động ra được phân phối đến trình duyệt thông qua mạng Internet.
-
-Với Web Forms, ta tạo ra các trang HTML với nội dung tĩnh và dùng mã C# chạy trên Server để xử lý dữ liệu tĩnh này rồi tạo ra trang Web động, gửi trang này về trình duyệt dưới mã HTML chuẩn.
-
-Web Forms được thiết để chạy trên bất kỳ trình duyệt nào, trang HTML gửi về sẽ được gọt giũa sao cho thích hợp với phiên bản của trình duyệt. Ngoài dùng C#, ta cũng có thể dùng ngôn ngữ VB.NET để tạo ra các ứng dụng Web tương tự.
-
-Web Forms chia giao diện người dùng thành hai phần : phần thấy trực quan ( hay UI) và phần trang mã phía sau của UI. Quan điểm này thì tương tự với Windows Form, nhưng với Web Forms, hai phần này nằm trên hai tập tin riêng biệt. Phần giao diện UI được lưu trữ trong tập tin có phần mở rộng là .aspx, còn mã được lưu trữ trong tập tin có phần mở rộng là .aspx.cs.
-
 SQL Server là một hệ quản lý cơ sở dữ liệu quan hệ được phát triển bởi Microsoft . Là một máy chủ cơ sở dữ liệu , nó là một sản phẩm phần mềm có chức năng chính lưu trữ và truy xuất dữ liệu theo yêu cầu của các ứng dụng phần mềm khác - có thể chạy trên cùng một máy tính hoặc trên một máy tính khác qua mạng
 
 MySQL là hệ quản trị cơ sở dữ liệu tự do nguồn mở phổ biến nhất thế giới và được các nhà phát triển rất ưa chuộng trong quá trình phát triển ứng dụng. Vì MySQL là cơ sở dữ liệu tốc độ cao, ổn định và dễ sử dụng, có tính khả chuyển, hoạt động trên nhiều hệ điều hành cung cấp một hệ thống lớn các hàm tiện ích rất mạnh. Với tốc độ và tính bảo mật cao, MySQL rất thích hợp cho các ứng dụng có truy cập CSDL trên internet. MySQL miễn phí hoàn toàn cho nên bạn có thể tải về MySQL từ trang chủ. Nó có nhiều phiên bản cho các hệ điều hành khác nhau: phiên bản Win32 cho các hệ điều hành dòng Windows, Linux, Mac OS X, Unix, FreeBSD, NetBSD, Novell NetWare, SGI Irix, Solaris, SunOS,...
@@ -136,7 +126,7 @@ Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iL
 
 Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iLi%E1%BB%87uChoNh%C3%A0Ph%C3%A1tTri%E1%BB%83n.md)
 
-**TÀI LIỆU CHO NGƯỜI DÙNG CUỐI**
+**TÀI LIỆU CHO NGƯỜI DÙNG CUỐI**   
 
 Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iLi%E1%BB%87uChoNg%C6%B0%E1%BB%9DiD%C3%B9ngCu%E1%BB%91i.md)
 
