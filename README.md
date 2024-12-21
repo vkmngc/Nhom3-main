@@ -130,22 +130,22 @@ Truy cập hệ thống quản trị thông qua xác thực tài khoản.
 
 **TÀI LIỆU THIẾT KẾ**
 
-Xem tại đây: [Link] ()
+Xem tại đây: [Link](https://github.com/vkmngc/Nhom3-main/blob/main/T%C3%A0iLi%E1%BB%87uTh%E1%BA%BFtK%E1%BA%BF.md)
 
 **TÀI LIỆU CHO NHÀ PHÁT TRIỂN**
 
-Xem tại đây: [Link] ()
+Xem tại đây: [Link]()
 
 **TÀI LIỆU CHO NGƯỜI DÙNG CUỐI**
-Xem tại đây: [Link] ()
+Xem tại đây: [Link]()
 
 **KÊNH TRUYỀN THÔNG**
 
-Fanpage: [Chiêu Minh Các] (https://www.facebook.com/ChieuMinhCac)
+Fanpage: [Chiêu Minh Các](https://www.facebook.com/ChieuMinhCac)
 
 **ĐÓNG GÓP Ý KIẾN**
 
-Đóng góp ý kiến tại [Chiêu Minh Các] (https://www.facebook.com/ChieuMinhCac)
+Đóng góp ý kiến tại [Chiêu Minh Các](https://www.facebook.com/ChieuMinhCac)
 
 **LỜI CẢM ƠN**
 
